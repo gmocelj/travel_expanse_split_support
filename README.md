@@ -1,6 +1,6 @@
-# SplitTrip — Support
+# Travel Expanse Split — Support
 
-Thank you for using SplitTrip! If you need help or have any questions, we're here for you.
+Thank you for using Travel Expanse Split! If you need help or have any questions, we're here for you.
 
 ## Contact Us
 
@@ -29,4 +29,4 @@ No. All your data is stored locally on your device. No account is required and n
 
 ## Privacy Policy
 
-SplitTrip does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.
+Travel Expanse Split does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.

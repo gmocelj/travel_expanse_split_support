@@ -1,14 +1,14 @@
-# SplitTrip — Privacy Policy
+# Travel Expanse Split — Privacy Policy
 
 **Last updated:** February 12, 2026
 
 ## Overview
 
-SplitTrip ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
+Travel Expanse Split ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
 
 ## Data Collection
 
-SplitTrip does **not** collect, store, or transmit any personal data to external servers. All trip data, expenses, and settings are stored locally on your device.
+Travel Expanse Split does **not** collect, store, or transmit any personal data to external servers. All trip data, expenses, and settings are stored locally on your device.
 
 ## What Data Is Stored Locally
 
@@ -34,7 +34,7 @@ When using the multi-currency feature, the app may fetch exchange rates from an 
 
 ## Children's Privacy
 
-SplitTrip does not knowingly collect any information from children under 13 years of age.
+Travel Expanse Split does not knowingly collect any information from children under 13 years of age.
 
 ## Changes to This Policy
 
