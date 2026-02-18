@@ -27,6 +27,15 @@ Go to the subscription screen and tap "Restore Purchases".
 **Is my data stored in the cloud?**
 No. All your data is stored locally on your device. No account is required and no data leaves your device.
 
+**How do I delete my data?**
+Simply delete the app from your device. This permanently removes all trips, expenses, settlements, and preferences stored locally. There is no account or cloud backup to delete separately.
+
+**My subscription isn't working — what do I do?**
+First, try tapping "Restore Purchases" on the subscription screen. If the issue persists, contact Apple Support for billing and payment issues, as all purchases are processed by Apple. For anything else, reach out to us at [goran.mocelj@gmail.com](mailto:goran.mocelj@gmail.com).
+
+**How do I get a refund?**
+Refunds are handled by Apple. Please visit [reportaproblem.apple.com](https://reportaproblem.apple.com) to request a refund for any App Store purchase.
+
 ## Disclaimer
 
 Travel Expanse Split is a tool to help you track and organize shared expenses. All calculations — including who owes whom and settlement amounts — are based solely on the data you enter. We are not responsible for any inaccuracies resulting from incorrect or incomplete data entry, nor for any financial disputes between users. Always verify settlements independently before making payments.

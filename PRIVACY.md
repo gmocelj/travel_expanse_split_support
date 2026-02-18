@@ -28,6 +28,14 @@ This data never leaves your device and is not accessible to us or any third part
 
 **Apple App Store:** Subscription purchases are processed by Apple. Apple's privacy policy applies to all transactions made through the App Store.
 
+## Data Deletion
+
+All data stored by the app is kept locally on your device. To permanently delete all your data, simply uninstall the app. No data is held on external servers, so no additional deletion steps are required.
+
+## Advertising and Tracking
+
+Travel Expanse Split does not use any advertising SDKs, tracking frameworks, or analytics services that collect personal data. No user behaviour is tracked or shared with third parties for marketing purposes.
+
 ## Exchange Rates
 
 When using the multi-currency feature, the app may fetch exchange rates from an external API. No personal data is sent in these requests.
