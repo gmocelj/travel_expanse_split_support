@@ -27,6 +27,10 @@ Go to the subscription screen and tap "Restore Purchases".
 **Is my data stored in the cloud?**
 No. All your data is stored locally on your device. No account is required and no data leaves your device.
 
+## Disclaimer
+
+Travel Expanse Split is a tool to help you track and organize shared expenses. All calculations — including who owes whom and settlement amounts — are based solely on the data you enter. We are not responsible for any inaccuracies resulting from incorrect or incomplete data entry, nor for any financial disputes between users. Always verify settlements independently before making payments.
+
 ## Privacy Policy
 
 Travel Expanse Split does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.
