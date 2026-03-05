@@ -18,8 +18,15 @@
       <meta name="description" content="{{ site.description }}" />
     {%- endif -%}
 
-    <link rel="icon" type="image/png" href="{{ '/assets/images/trevvy-app-icon.png' | relative_url }}" />
-    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+    <!--
+      GitHub Pages serves project sites under `/<repo>/` on `*.github.io`,
+      but at `/` on a custom domain. Load assets from both paths so styling
+      works in both contexts without requiring `baseurl`.
+    -->
+    <link rel="icon" type="image/png" href="/assets/images/trevvy-app-icon.png" />
+    <link rel="icon" type="image/png" href="/travel_expanse_split_support/assets/images/trevvy-app-icon.png" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <link rel="stylesheet" href="/travel_expanse_split_support/assets/css/site.css" />
 
     <script>
       (() => {
@@ -30,15 +37,17 @@
       })();
     </script>
 
-    <script defer src="{{ '/assets/site.js' | relative_url }}"></script>
+    <script defer src="/assets/site.js"></script>
+    <script defer src="/travel_expanse_split_support/assets/site.js"></script>
   </head>
   <body>
     <header class="topbar">
       <div class="topbar__inner">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Trevvy home">
+        <a class="brand" data-base-href="/" href="/" aria-label="Trevvy home">
           <img
             class="brand__logo"
-            src="{{ '/assets/images/trevvy-app-icon.png' | relative_url }}"
+            data-base-src="/assets/images/trevvy-app-icon.png"
+            src="/assets/images/trevvy-app-icon.png"
             width="40"
             height="40"
             alt=""
@@ -48,8 +57,8 @@
         </a>
 
         <nav class="nav" aria-label="Primary">
-          <a class="nav__link" href="{{ '/' | relative_url }}">Support</a>
-          <a class="nav__link" href="{{ '/privacy/' | relative_url }}">Privacy</a>
+          <a class="nav__link" data-base-href="/" href="/">Support</a>
+          <a class="nav__link" data-base-href="/privacy/" href="/privacy/">Privacy</a>
           <a class="nav__link" href="mailto:support@trevvy.app">Contact</a>
         </nav>
 
@@ -80,4 +89,3 @@
     </footer>
   </body>
 </html>
-
