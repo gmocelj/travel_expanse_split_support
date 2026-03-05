@@ -1,14 +1,14 @@
-# Travel Expanse Split — Privacy Policy
+# Trevvy — Privacy Policy
 
-**Last updated:** February 12, 2026
+**Last updated:** March 5, 2026
 
 ## Overview
 
-Travel Expanse Split ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
+Trevvy ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
 
 ## Data Collection
 
-Travel Expanse Split does **not** collect, store, or transmit any personal data to external servers. All trip data, expenses, and settings are stored locally on your device.
+Trevvy does **not** collect, store, or transmit any personal data to external servers. All trip data, expenses, and settings are stored locally on your device.
 
 ## What Data Is Stored Locally
 
@@ -34,7 +34,7 @@ All data stored by the app is kept locally on your device. To permanently delete
 
 ## Advertising and Tracking
 
-Travel Expanse Split does not use any advertising SDKs, tracking frameworks, or analytics services that collect personal data. No user behaviour is tracked or shared with third parties for marketing purposes.
+Trevvy does not use any advertising SDKs, tracking frameworks, or analytics services that collect personal data. No user behaviour is tracked or shared with third parties for marketing purposes.
 
 ## Exchange Rates
 
@@ -42,7 +42,7 @@ When using the multi-currency feature, the app may fetch exchange rates from an 
 
 ## Children's Privacy
 
-Travel Expanse Split does not knowingly collect any information from children under 13 years of age.
+Trevvy does not knowingly collect any information from children under 13 years of age.
 
 ## Changes to This Policy
 
@@ -52,4 +52,5 @@ We may update this Privacy Policy from time to time. Any changes will be reflect
 
 If you have any questions about this Privacy Policy, please contact us at:
 
-**Email:** [goran.mocelj@gmail.com](mailto:goran.mocelj@gmail.com)
+**Email:** [support@trevvy.app](mailto:support@trevvy.app)
+

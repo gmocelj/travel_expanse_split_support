@@ -1,12 +1,12 @@
-# Travel Expanse Split — Support
+# Trevvy — Support
 
-Thank you for using Travel Expanse Split! If you need help or have any questions, we're here for you.
+Thank you for using Trevvy! If you need help or have any questions, we're here for you.
 
 ## Contact Us
 
 For support, feedback, or bug reports, please reach out to us at:
 
-**Email:** [goran.mocelj@gmail.com](mailto:goran.mocelj@gmail.com)
+**Email:** [support@trevvy.app](mailto:support@trevvy.app)
 
 We aim to respond within 48 hours.
 
@@ -38,7 +38,7 @@ In addition, the app can parse QR receipts in **JSON format**, **key-value text 
 
 **OCR scanning** (scanning a photo of a printed receipt) works with receipts from any country, as it reads the text directly from the image. Results may vary depending on receipt clarity, font, and language.
 
-If your country is not listed above, OCR scanning is the best option for automatically reading receipt details. Support for additional QR formats may be added in future updates — feel free to [contact us](mailto:goran.mocelj@gmail.com) to request your country.
+If your country is not listed above, OCR scanning is the best option for automatically reading receipt details. Support for additional QR formats may be added in future updates — feel free to [contact us](mailto:support@trevvy.app) to request your country.
 
 **How do I restore my purchase on a new device?**
 Go to the subscription screen and tap "Restore Purchases".
@@ -50,15 +50,15 @@ No. All your data is stored locally on your device. No account is required and n
 Simply delete the app from your device. This permanently removes all trips, expenses, settlements, and preferences stored locally. There is no account or cloud backup to delete separately.
 
 **My subscription isn't working — what do I do?**
-First, try tapping "Restore Purchases" on the subscription screen. If the issue persists, contact Apple Support for billing and payment issues, as all purchases are processed by Apple. For anything else, reach out to us at [goran.mocelj@gmail.com](mailto:goran.mocelj@gmail.com).
+First, try tapping "Restore Purchases" on the subscription screen. If the issue persists, contact Apple Support for billing and payment issues, as all purchases are processed by Apple. For anything else, reach out to us at [support@trevvy.app](mailto:support@trevvy.app).
 
 **How do I get a refund?**
 Refunds are handled by Apple. Please visit [reportaproblem.apple.com](https://reportaproblem.apple.com) to request a refund for any App Store purchase.
 
 ## Disclaimer
 
-Travel Expanse Split is a tool to help you track and organize shared expenses. All calculations — including who owes whom and settlement amounts — are based solely on the data you enter. We are not responsible for any inaccuracies resulting from incorrect or incomplete data entry, nor for any financial disputes between users. Always verify settlements independently before making payments.
+Trevvy is a tool to help you track and organize shared expenses. All calculations — including who owes whom and settlement amounts — are based solely on the data you enter. We are not responsible for any inaccuracies resulting from incorrect or incomplete data entry, nor for any financial disputes between users. Always verify settlements independently before making payments.
 
 ## Privacy Policy
 
-Travel Expanse Split does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.
+Trevvy does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.
