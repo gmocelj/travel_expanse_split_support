@@ -80,7 +80,7 @@ Trevvy is a tool to help you track and organize shared expenses. All calculation
 
 Trevvy does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.
 
-Read the full Privacy Policy: [/privacy/](/privacy/)
+Read the full Privacy Policy: [Privacy Policy](privacy/)
 
 ## Contact Us
 

@@ -2,6 +2,7 @@
   const storageKey = "trevvy-theme";
   const root = document.documentElement;
   const toggle = document.getElementById("themeToggle");
+  const repoBase = "/travel_expanse_split_support";
 
   const getPreferred = () => {
     try {
@@ -31,6 +32,27 @@
 
   applyTheme(getPreferred());
 
+  const applyBasePath = () => {
+    const base =
+      window.location && window.location.pathname.startsWith(repoBase + "/")
+        ? repoBase
+        : "";
+
+    document.querySelectorAll("[data-base-href]").forEach((element) => {
+      const href = element.getAttribute("data-base-href");
+      if (!href) return;
+      element.setAttribute("href", `${base}${href}`);
+    });
+
+    document.querySelectorAll("[data-base-src]").forEach((element) => {
+      const src = element.getAttribute("data-base-src");
+      if (!src) return;
+      element.setAttribute("src", `${base}${src}`);
+    });
+  };
+
+  applyBasePath();
+
   if (toggle) {
     toggle.addEventListener("click", () => {
       const current = root.dataset.theme === "light" ? "light" : "dark";
@@ -38,4 +60,3 @@
     });
   }
 })();
-
