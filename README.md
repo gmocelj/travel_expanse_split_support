@@ -1,5 +1,3 @@
-# Trevvy — Support
-
 Thank you for using Trevvy! If you need help or have any questions, we're here for you.
 
 ## Contact Us

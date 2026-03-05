@@ -1,4 +1,4 @@
-# Trevvy — Privacy Policy
+# Privacy Policy
 
 **Last updated:** March 5, 2026
 
