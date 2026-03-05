@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'en' }}" data-theme="dark">
+<html lang="{{ site.lang | default: 'en' }}" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,8 +69,10 @@
     </header>
 
     <main class="container">
-      <section class="card content">
-        {{ content }}
+      <section class="card">
+        <div class="content">
+          {{ content }}
+        </div>
       </section>
     </main>
 
