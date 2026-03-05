@@ -105,6 +105,10 @@ html[data-theme="light"] .topbar {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
+html[data-theme="light"] .brand__logo {
+  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.14);
+}
+
 .brand__name {
   font-weight: 780;
   letter-spacing: 0.2px;
@@ -123,6 +127,7 @@ html[data-theme="light"] .topbar {
   padding: 8px 12px;
   border-radius: 999px;
   font-weight: 650;
+  border: 1px solid transparent;
 }
 
 .nav__link:hover {
@@ -133,6 +138,16 @@ html[data-theme="light"] .topbar {
 
 html[data-theme="light"] .nav__link:hover {
   background: rgba(17, 24, 39, 0.06);
+}
+
+.nav__link[aria-current="page"] {
+  color: var(--text);
+  background: rgba(28, 194, 159, 0.12);
+  border-color: rgba(28, 194, 159, 0.3);
+}
+
+html[data-theme="light"] .nav__link[aria-current="page"] {
+  background: rgba(28, 194, 159, 0.14);
 }
 
 .themeToggle {

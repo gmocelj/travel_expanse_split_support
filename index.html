@@ -20,23 +20,56 @@ title: Trevvy Support
 <section class="section">
   <h2>App screenshots</h2>
   <p class="muted">
-    Want to showcase Trevvy? Drop screenshots into <code>assets/images/screenshots/</code> and replace the placeholders below.
+    Want to showcase Trevvy? Add images to <code>assets/images/screenshots/</code> and they’ll appear here automatically.
   </p>
 
-  <div class="shots" aria-label="Trevvy app screenshots">
-    <figure class="shot">
-      <div class="shot__placeholder">Screenshot 1</div>
-      <figcaption class="shot__caption">Trips overview</figcaption>
-    </figure>
-    <figure class="shot">
-      <div class="shot__placeholder">Screenshot 2</div>
-      <figcaption class="shot__caption">Add expense</figcaption>
-    </figure>
-    <figure class="shot">
-      <div class="shot__placeholder">Screenshot 3</div>
-      <figcaption class="shot__caption">Settlement</figcaption>
-    </figure>
-  </div>
+  {% assign screenshot_count = 0 %}
+  {% for file in site.static_files %}
+    {% if file.path contains "/assets/images/screenshots/" %}
+      {% assign lower_path = file.path | downcase %}
+      {% if lower_path contains ".png" or lower_path contains ".jpg" or lower_path contains ".jpeg" or lower_path contains ".webp" or lower_path contains ".gif" %}
+        {% assign screenshot_count = screenshot_count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if screenshot_count > 0 %}
+    <div class="shots" aria-label="Trevvy app screenshots">
+      {% assign index = 0 %}
+      {% for file in site.static_files %}
+        {% if file.path contains "/assets/images/screenshots/" %}
+          {% assign lower_path = file.path | downcase %}
+          {% if lower_path contains ".png" or lower_path contains ".jpg" or lower_path contains ".jpeg" or lower_path contains ".webp" or lower_path contains ".gif" %}
+            {% assign index = index | plus: 1 %}
+            <figure class="shot">
+              <img
+                class="shot__image"
+                data-base-src="{{ file.path }}"
+                src="{{ file.path }}"
+                alt="Trevvy app screenshot {{ index }}"
+                loading="lazy"
+              />
+            </figure>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="shots" aria-label="Trevvy app screenshots">
+      <figure class="shot">
+        <div class="shot__placeholder">Screenshot 1</div>
+        <figcaption class="shot__caption">Trips overview</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot__placeholder">Screenshot 2</div>
+        <figcaption class="shot__caption">Add expense</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="shot__placeholder">Screenshot 3</div>
+        <figcaption class="shot__caption">Settlement</figcaption>
+      </figure>
+    </div>
+  {% endif %}
 </section>
 
 <section class="section">
