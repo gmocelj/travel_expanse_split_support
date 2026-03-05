@@ -23,34 +23,31 @@ title: Trevvy Support
     Want to showcase Trevvy? Add images to <code>assets/images/screenshots/</code> and they’ll appear here automatically.
   </p>
 
+  {% assign screenshot_files = site.static_files | where_exp: "f", "f.path contains '/assets/images/screenshots/'" | sort: "path" %}
   {% assign screenshot_count = 0 %}
-  {% for file in site.static_files %}
-    {% if file.path contains "/assets/images/screenshots/" %}
-      {% assign lower_path = file.path | downcase %}
-      {% if lower_path contains ".png" or lower_path contains ".jpg" or lower_path contains ".jpeg" or lower_path contains ".webp" or lower_path contains ".gif" %}
-        {% assign screenshot_count = screenshot_count | plus: 1 %}
-      {% endif %}
+  {% for file in screenshot_files %}
+    {% assign lower_path = file.path | downcase %}
+    {% if lower_path contains ".png" or lower_path contains ".jpg" or lower_path contains ".jpeg" or lower_path contains ".webp" or lower_path contains ".gif" %}
+      {% assign screenshot_count = screenshot_count | plus: 1 %}
     {% endif %}
   {% endfor %}
 
   {% if screenshot_count > 0 %}
     <div class="shots" aria-label="Trevvy app screenshots">
       {% assign index = 0 %}
-      {% for file in site.static_files %}
-        {% if file.path contains "/assets/images/screenshots/" %}
-          {% assign lower_path = file.path | downcase %}
-          {% if lower_path contains ".png" or lower_path contains ".jpg" or lower_path contains ".jpeg" or lower_path contains ".webp" or lower_path contains ".gif" %}
-            {% assign index = index | plus: 1 %}
-            <figure class="shot">
-              <img
-                class="shot__image"
-                data-base-src="{{ file.path }}"
-                src="{{ file.path }}"
-                alt="Trevvy app screenshot {{ index }}"
-                loading="lazy"
-              />
-            </figure>
-          {% endif %}
+      {% for file in screenshot_files %}
+        {% assign lower_path = file.path | downcase %}
+        {% if lower_path contains ".png" or lower_path contains ".jpg" or lower_path contains ".jpeg" or lower_path contains ".webp" or lower_path contains ".gif" %}
+          {% assign index = index | plus: 1 %}
+          <figure class="shot">
+            <img
+              class="shot__image"
+              data-base-src="{{ file.path }}"
+              src="{{ file.path }}"
+              alt="Trevvy app screenshot {{ index }}"
+              loading="lazy"
+            />
+          </figure>
         {% endif %}
       {% endfor %}
     </div>
