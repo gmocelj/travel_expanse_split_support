@@ -1,3 +1,5 @@
+# Support
+
 Thank you for using Trevvy! If you need help or have any questions, we're here for you.
 
 ## Contact Us
@@ -10,48 +12,75 @@ We aim to respond within 48 hours.
 
 ## Frequently Asked Questions
 
-**How do I add an expense?**
-Open a trip, tap the "+" button, enter the amount, select who paid, choose participants, and pick a split method.
+<details markdown="1">
+  <summary markdown="1">How do I add an expense?</summary>
 
-**How do I settle debts?**
-Go to the Settlement tab within a trip to see who owes whom. Record payments as they happen to keep track.
+  Open a trip, tap the "+" button, enter the amount, select who paid, choose participants, and pick a split method.
+</details>
 
-**What's included in Premium?**
-Premium unlocks unlimited trips and people, QR and OCR receipt scanning, analytics dashboard, and live exchange rates for multi-currency trips.
+<details markdown="1">
+  <summary markdown="1">How do I settle debts?</summary>
 
-**Which countries are supported for QR receipt scanning?**
-QR scanning works natively with official electronic receipt formats from the following countries:
+  Go to the Settlement tab within a trip to see who owes whom. Record payments as they happen to keep track.
+</details>
 
-| Country | Format |
-|---------|--------|
-| 🇧🇷 Brazil | NFC-e (Nota Fiscal do Consumidor Eletrônica) |
-| 🇸🇦 Saudi Arabia | ZATCA / Fatoora e-invoice |
-| 🇨🇳 China | Fapiao electronic invoice |
-| 🇮🇳 India | GST invoice QR code |
-| 🇹🇼 Taiwan | Cloud invoice (電子發票) |
-| 🇦🇹 Austria | RKSV fiscal receipt |
-| 🇵🇹 Portugal | AT invoice QR code |
+<details markdown="1">
+  <summary markdown="1">What's included in Premium?</summary>
 
-In addition, the app can parse QR receipts in **JSON format**, **key-value text format** (used by some point-of-sale systems globally), and **URL-based receipts** (receipts that link to a web page with the invoice details).
+  Premium unlocks unlimited trips and people, QR and OCR receipt scanning, analytics dashboard, and live exchange rates for multi-currency trips.
+</details>
 
-**OCR scanning** (scanning a photo of a printed receipt) works with receipts from any country, as it reads the text directly from the image. Results may vary depending on receipt clarity, font, and language.
+<details markdown="1">
+  <summary markdown="1">Which countries are supported for QR receipt scanning?</summary>
 
-If your country is not listed above, OCR scanning is the best option for automatically reading receipt details. Support for additional QR formats may be added in future updates — feel free to [contact us](mailto:support@trevvy.app) to request your country.
+  QR scanning works natively with official electronic receipt formats from the following countries:
 
-**How do I restore my purchase on a new device?**
-Go to the subscription screen and tap "Restore Purchases".
+  | Country | Format |
+  |---------|--------|
+  | 🇧🇷 Brazil | NFC-e (Nota Fiscal do Consumidor Eletrônica) |
+  | 🇸🇦 Saudi Arabia | ZATCA / Fatoora e-invoice |
+  | 🇨🇳 China | Fapiao electronic invoice |
+  | 🇮🇳 India | GST invoice QR code |
+  | 🇹🇼 Taiwan | Cloud invoice (電子發票) |
+  | 🇦🇹 Austria | RKSV fiscal receipt |
+  | 🇵🇹 Portugal | AT invoice QR code |
 
-**Is my data stored in the cloud?**
-No. All your data is stored locally on your device. No account is required and no data leaves your device.
+  In addition, the app can parse QR receipts in **JSON format**, **key-value text format** (used by some point-of-sale systems globally), and **URL-based receipts** (receipts that link to a web page with the invoice details).
 
-**How do I delete my data?**
-Simply delete the app from your device. This permanently removes all trips, expenses, settlements, and preferences stored locally. There is no account or cloud backup to delete separately.
+  **OCR scanning** (scanning a photo of a printed receipt) works with receipts from any country, as it reads the text directly from the image. Results may vary depending on receipt clarity, font, and language.
 
-**My subscription isn't working — what do I do?**
-First, try tapping "Restore Purchases" on the subscription screen. If the issue persists, contact Apple Support for billing and payment issues, as all purchases are processed by Apple. For anything else, reach out to us at [support@trevvy.app](mailto:support@trevvy.app).
+  If your country is not listed above, OCR scanning is the best option for automatically reading receipt details. Support for additional QR formats may be added in future updates — feel free to [contact us](mailto:support@trevvy.app) to request your country.
+</details>
 
-**How do I get a refund?**
-Refunds are handled by Apple. Please visit [reportaproblem.apple.com](https://reportaproblem.apple.com) to request a refund for any App Store purchase.
+<details markdown="1">
+  <summary markdown="1">How do I restore my purchase on a new device?</summary>
+
+  Go to the subscription screen and tap "Restore Purchases".
+</details>
+
+<details markdown="1">
+  <summary markdown="1">Is my data stored in the cloud?</summary>
+
+  No. All your data is stored locally on your device. No account is required and no data leaves your device.
+</details>
+
+<details markdown="1">
+  <summary markdown="1">How do I delete my data?</summary>
+
+  Simply delete the app from your device. This permanently removes all trips, expenses, settlements, and preferences stored locally. There is no account or cloud backup to delete separately.
+</details>
+
+<details markdown="1">
+  <summary markdown="1">My subscription isn't working — what do I do?</summary>
+
+  First, try tapping "Restore Purchases" on the subscription screen. If the issue persists, contact Apple Support for billing and payment issues, as all purchases are processed by Apple. For anything else, reach out to us at [support@trevvy.app](mailto:support@trevvy.app).
+</details>
+
+<details markdown="1">
+  <summary markdown="1">How do I get a refund?</summary>
+
+  Refunds are handled by Apple. Please visit [reportaproblem.apple.com](https://reportaproblem.apple.com) to request a refund for any App Store purchase.
+</details>
 
 ## Disclaimer
 

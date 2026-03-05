@@ -199,6 +199,64 @@ html[data-theme="light"] .themeToggle {
   color: var(--muted);
 }
 
+.content details {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(234, 242, 255, 0.04);
+  margin: 12px 0;
+  overflow: hidden;
+}
+
+html[data-theme="light"] .content details {
+  background: rgba(10, 18, 36, 0.02);
+}
+
+.content details > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 16px;
+  color: var(--text);
+  font-weight: 750;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.content details > summary::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(212, 175, 55, 0.9);
+  border-bottom: 2px solid rgba(212, 175, 55, 0.9);
+  transform: rotate(-45deg);
+  transition: transform 180ms ease;
+  flex: 0 0 auto;
+}
+
+.content details[open] > summary::before {
+  transform: rotate(45deg);
+}
+
+.content details > summary:hover {
+  background: rgba(234, 242, 255, 0.05);
+}
+
+html[data-theme="light"] .content details > summary:hover {
+  background: rgba(10, 18, 36, 0.03);
+}
+
+.content details > *:not(summary) {
+  padding: 0 16px 16px;
+}
+
+.content details > *:not(summary):first-child {
+  padding-top: 0;
+}
+
 .content strong {
   color: var(--text);
 }
@@ -321,4 +379,3 @@ html[data-theme="light"] .content th {
     align-items: flex-start;
   }
 }
-
