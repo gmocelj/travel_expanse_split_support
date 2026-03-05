@@ -1,14 +1,4 @@
-# Support
-
 Thank you for using Trevvy! If you need help or have any questions, we're here for you.
-
-## Contact Us
-
-For support, feedback, or bug reports, please reach out to us at:
-
-**Email:** [support@trevvy.app](mailto:support@trevvy.app)
-
-We aim to respond within 48 hours.
 
 ## Frequently Asked Questions
 
@@ -89,3 +79,13 @@ Trevvy is a tool to help you track and organize shared expenses. All calculation
 ## Privacy Policy
 
 Trevvy does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.
+
+Read the full Privacy Policy: [/privacy/](/privacy/)
+
+## Contact Us
+
+For support, feedback, or bug reports, please reach out to us at:
+
+**Email:** [support@trevvy.app](mailto:support@trevvy.app)
+
+We aim to respond within 48 hours.
