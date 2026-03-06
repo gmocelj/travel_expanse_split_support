@@ -1,10 +1,11 @@
-# v0 runtime files
-__v0_runtime_loader.js
-__v0_devtools.tsx
-__v0_jsx-dev-runtime.ts
-
-# Common ignores
+# Build outputs
 node_modules/
 .next/
+out/
+next-env.d.ts
+
+# Env
 .env*.local
+
+# OS
 .DS_Store
