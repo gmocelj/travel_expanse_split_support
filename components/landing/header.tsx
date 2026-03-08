@@ -19,13 +19,13 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:gap-8">
-          <Link href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Features
           </Link>
-          <Link href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             How It Works
           </Link>
-          <Link href="#support" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/#support" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Support
           </Link>
           <Link href="/privacy" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
@@ -56,21 +56,21 @@ export function Header() {
         <div className="md:hidden bg-background border-b border-border">
           <div className="flex flex-col gap-4 px-6 py-4">
             <Link
-              href="#features"
+              href="/#features"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Features
             </Link>
             <Link
-              href="#how-it-works"
+              href="/#how-it-works"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               How It Works
             </Link>
             <Link
-              href="#support"
+              href="/#support"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
