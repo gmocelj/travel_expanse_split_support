@@ -13,7 +13,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/trevvy-app-icon.png" alt="Trevvy" width={32} height={32} className="rounded-lg ring-2 ring-primary" />
+          <Image src="/trevvy-app-icon.png" alt="Trevvy" width={32} height={32} className="rounded-lg ring-2 ring-primary/40" />
           <span className="text-xl font-semibold text-foreground">Trevvy</span>
         </Link>
 
