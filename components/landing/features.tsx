@@ -19,7 +19,7 @@ const features = [
   {
     icon: ScanLine,
     title: "QR & OCR receipt scanning",
-    description: "Scan receipts with your camera or QR code — Trevvy reads the total for you automatically.",
+    description: "Scan fiscal receipt QR codes from 27 countries — Trevvy reads the total, currency, and tax details automatically.",
   },
   {
     icon: Globe,

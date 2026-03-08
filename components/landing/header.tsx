@@ -25,6 +25,9 @@ export function Header() {
           <Link href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             How It Works
           </Link>
+          <Link href="/#faq" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            FAQ
+          </Link>
           <Link href="/#support" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Support
           </Link>
@@ -68,6 +71,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               How It Works
+            </Link>
+            <Link
+              href="/#faq"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              FAQ
             </Link>
             <Link
               href="/#support"
