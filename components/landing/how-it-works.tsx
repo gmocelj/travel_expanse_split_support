@@ -10,8 +10,8 @@ const steps = [
   {
     step: "02",
     icon: UserPlus,
-    title: "Add friends",
-    description: "Invite your travel companions to join your trip group.",
+    title: "Add participants",
+    description: "Manually add your travel companions by name — no account needed.",
   },
   {
     step: "03",

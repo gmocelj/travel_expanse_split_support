@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Apple } from "lucide-react"
 
@@ -32,8 +33,8 @@ export function Hero() {
 
           {/* Subheadline */}
           <p className="mt-6 text-lg leading-8 text-muted-foreground sm:text-xl max-w-2xl mx-auto text-pretty">
-            Track shared costs, settle balances, and enjoy your trip with friends. 
-            The simple, fast, and stress-free way to manage group expenses.
+            Track shared costs, settle balances, and enjoy your trip.
+            Add participants, log expenses by category, and see who owes what — all stored privately on your device.
           </p>
 
           {/* CTA Buttons */}
@@ -45,97 +46,25 @@ export function Hero() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8 h-14 text-base font-medium">
-              <Link href="#how-it-works">
+              <Link href="/#how-it-works">
                 See How It Works
               </Link>
             </Button>
           </div>
         </div>
 
-        {/* App Mockup */}
+        {/* App Screenshot */}
         <div className="mt-16 lg:mt-24 relative">
-          <div className="mx-auto max-w-sm lg:max-w-md">
-            <div className="relative">
-              {/* Phone Frame */}
-              <div className="relative mx-auto bg-foreground rounded-[3rem] p-3 shadow-2xl">
-                <div className="bg-card rounded-[2.5rem] overflow-hidden aspect-[9/19]">
-                  {/* Status Bar */}
-                  <div className="bg-card px-6 pt-3 pb-2 flex items-center justify-between">
-                    <span className="text-xs font-medium text-foreground">9:41</span>
-                    <div className="flex items-center gap-1">
-                      <div className="w-4 h-2 bg-foreground/80 rounded-sm" />
-                      <div className="w-4 h-2 bg-foreground/80 rounded-sm" />
-                      <div className="w-6 h-3 bg-foreground/80 rounded-sm" />
-                    </div>
-                  </div>
-                  
-                  {/* App Content Preview */}
-                  <div className="px-5 py-4">
-                    <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-lg font-semibold text-foreground">Summer Road Trip</h3>
-                      <span className="text-xs font-medium px-2 py-1 bg-primary/10 text-primary rounded-full">Active</span>
-                    </div>
-                    
-                    {/* Balance Cards */}
-                    <div className="space-y-3">
-                      <div className="bg-muted rounded-2xl p-4">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                              <span className="text-sm font-medium text-primary">JD</span>
-                            </div>
-                            <div>
-                              <p className="font-medium text-foreground text-sm">John</p>
-                              <p className="text-xs text-muted-foreground">owes you</p>
-                            </div>
-                          </div>
-                          <span className="text-base font-semibold text-emerald-600">+$45.50</span>
-                        </div>
-                      </div>
-                      
-                      <div className="bg-muted rounded-2xl p-4">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="h-10 w-10 rounded-full bg-accent/20 flex items-center justify-center">
-                              <span className="text-sm font-medium text-accent">SM</span>
-                            </div>
-                            <div>
-                              <p className="font-medium text-foreground text-sm">Sarah</p>
-                              <p className="text-xs text-muted-foreground">you owe</p>
-                            </div>
-                          </div>
-                          <span className="text-base font-semibold text-rose-600">-$22.00</span>
-                        </div>
-                      </div>
-                      
-                      <div className="bg-muted rounded-2xl p-4">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="h-10 w-10 rounded-full bg-chart-4/20 flex items-center justify-center">
-                              <span className="text-sm font-medium text-chart-4">MK</span>
-                            </div>
-                            <div>
-                              <p className="font-medium text-foreground text-sm">Mike</p>
-                              <p className="text-xs text-muted-foreground">settled</p>
-                            </div>
-                          </div>
-                          <span className="text-base font-semibold text-muted-foreground">$0.00</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Total */}
-                    <div className="mt-6 bg-primary rounded-2xl p-4 text-center">
-                      <p className="text-sm text-primary-foreground/80">Your total balance</p>
-                      <p className="text-2xl font-bold text-primary-foreground">+$23.50</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -right-8 top-1/4 h-20 w-20 rounded-2xl bg-primary/20 rotate-12 blur-sm hidden lg:block" />
-              <div className="absolute -left-12 bottom-1/3 h-16 w-16 rounded-full bg-accent/20 blur-sm hidden lg:block" />
+          <div className="mx-auto max-w-xs">
+            <div className="relative drop-shadow-2xl">
+              <Image
+                src="/screenshots/expenses-list.png"
+                alt="Trevvy app – Expenses screen"
+                width={390}
+                height={844}
+                className="rounded-[3rem] w-full"
+                priority
+              />
             </div>
           </div>
         </div>
