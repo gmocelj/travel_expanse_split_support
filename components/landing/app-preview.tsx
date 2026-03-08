@@ -50,7 +50,7 @@ export function AppPreview() {
                   alt={screen.alt}
                   width={390}
                   height={844}
-                  className="rounded-[2rem] w-full"
+                  className="rounded-[2rem] w-full ring-2 ring-primary/40"
                 />
               </div>
               <p className="mt-5 text-sm font-semibold text-foreground">{screen.label}</p>

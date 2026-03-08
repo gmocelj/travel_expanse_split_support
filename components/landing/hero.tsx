@@ -62,7 +62,7 @@ export function Hero() {
                 alt="Trevvy app – Expenses screen"
                 width={390}
                 height={844}
-                className="rounded-[3rem] w-full"
+                className="rounded-[3rem] w-full ring-2 ring-primary/40"
                 priority
               />
             </div>
