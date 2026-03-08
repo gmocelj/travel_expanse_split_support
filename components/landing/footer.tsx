@@ -10,7 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div className="max-w-sm">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/trevvy-app-icon.png" alt="Trevvy" width={32} height={32} className="rounded-lg ring-2 ring-primary/40" />
+              <Image src="/trevvy-app-icon.png" alt="Trevvy" width={32} height={32} className="rounded-lg ring-1 ring-primary/40" />
               <span className="text-xl font-semibold text-foreground">Trevvy</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
