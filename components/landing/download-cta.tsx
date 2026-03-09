@@ -21,7 +21,7 @@ export function DownloadCTA() {
             </p>
             <div className="mt-10 flex items-center justify-center">
               <Button asChild size="lg" className="rounded-full px-8 h-14 text-base font-medium shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all">
-                <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://apps.apple.com/us/app/trevvy/id6754640654" target="_blank" rel="noopener noreferrer">
                   <Apple className="mr-2 h-5 w-5" />
                   Download on App Store
                 </Link>

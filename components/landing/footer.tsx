@@ -34,7 +34,7 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1">
+                  <Link href="https://apps.apple.com/us/app/trevvy/id6754640654" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1">
                     <Apple className="h-3.5 w-3.5" />
                     App Store
                   </Link>

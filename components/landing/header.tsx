@@ -38,7 +38,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <Button asChild className="rounded-full px-6">
-            <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://apps.apple.com/us/app/trevvy/id6754640654" target="_blank" rel="noopener noreferrer">
               Download App
             </Link>
           </Button>
@@ -94,7 +94,7 @@ export function Header() {
               Privacy
             </Link>
             <Button asChild className="rounded-full w-full mt-2">
-              <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://apps.apple.com/us/app/trevvy/id6754640654" target="_blank" rel="noopener noreferrer">
                 Download App
               </Link>
             </Button>
