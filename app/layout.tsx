@@ -75,6 +75,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${dmSans.variable} dark`}>
+      <head>
+        {/* Security: Content Security Policy */}
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://vitals.vercel-insights.com; frame-ancestors 'none';"
+        />
+        {/* Security: prevent clickjacking */}
+        <meta httpEquiv="X-Frame-Options" content="DENY" />
+        {/* Security: prevent MIME sniffing */}
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+      </head>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

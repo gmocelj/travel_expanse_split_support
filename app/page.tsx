@@ -9,33 +9,25 @@ import { DownloadCTA } from "@/components/landing/download-cta"
 import { Support } from "@/components/landing/support"
 import { Footer } from "@/components/landing/footer"
 
-const softwareAppJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'Trevvy',
-  description: 'Track shared costs, settle balances, and enjoy your trip with friends. The simple, fast, and stress-free way to split travel expenses — no account required.',
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: ['iOS', 'Android'],
-  url: 'https://trevvy.app',
-  offers: {
-    '@type': 'Offer',
-    price: '0',
-    priceCurrency: 'USD',
-  },
-  featureList: [
-    'Expense splitting with optimized settlement',
-    'QR receipt scanning for 27 countries',
-    'Multi-currency support with live exchange rates',
-    'Spending analytics and charts',
-    'Offline-first, no account required',
-    'Trip Pass for single-trip premium access',
-  ],
-  screenshot: [
-    'https://trevvy.app/screenshots/expenses-list.png',
-    'https://trevvy.app/screenshots/travels-list.png',
-    'https://trevvy.app/screenshots/analytics-chart.png',
-    'https://trevvy.app/screenshots/settlement-payments.png',
-  ],
+const APP_STORE_ID = '6754640654'
+
+async function fetchAppStoreRating(): Promise<{ ratingValue: string; ratingCount: string } | null> {
+  try {
+    const res = await fetch(
+      `https://itunes.apple.com/lookup?id=${APP_STORE_ID}`,
+      { next: { revalidate: false } },
+    )
+    if (!res.ok) return null
+    const data = await res.json()
+    const app = data?.results?.[0]
+    if (!app?.averageUserRating || !app?.userRatingCount) return null
+    return {
+      ratingValue: app.averageUserRating.toFixed(1),
+      ratingCount: String(app.userRatingCount),
+    }
+  } catch {
+    return null
+  }
 }
 
 const faqJsonLd = {
@@ -101,7 +93,47 @@ const faqJsonLd = {
   ],
 }
 
-export default function Home() {
+export default async function Home() {
+  const rating = await fetchAppStoreRating()
+
+  const softwareAppJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Trevvy',
+    description: 'Track shared costs, settle balances, and enjoy your trip with friends. The simple, fast, and stress-free way to split travel expenses — no account required.',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: ['iOS', 'Android'],
+    url: 'https://trevvy.app',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    featureList: [
+      'Expense splitting with optimized settlement',
+      'QR receipt scanning for 27 countries',
+      'Multi-currency support with live exchange rates',
+      'Spending analytics and charts',
+      'Offline-first, no account required',
+      'Trip Pass for single-trip premium access',
+    ],
+    screenshot: [
+      'https://trevvy.app/screenshots/expenses-list.png',
+      'https://trevvy.app/screenshots/travels-list.png',
+      'https://trevvy.app/screenshots/analytics-chart.png',
+      'https://trevvy.app/screenshots/settlement-payments.png',
+    ],
+    ...(rating && {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: rating.ratingValue,
+        ratingCount: rating.ratingCount,
+        bestRating: '5',
+        worstRating: '1',
+      },
+    }),
+  }
+
   return (
     <main className="min-h-screen">
       <script

@@ -2,13 +2,13 @@ import Image from "next/image"
 
 const screens = [
   {
-    src: "/screenshots/travels-list.png",
+    src: "/screenshots/travels-list.webp",
     alt: "Travels list – manage your trips",
     label: "Your Travels",
     description: "Create trips, set budgets, and track spending across all your travels in one place.",
   },
   {
-    src: "/screenshots/expenses-list.png",
+    src: "/screenshots/expenses-list.webp",
     alt: "Expenses list with categories",
     label: "Track Expenses",
     description: "Log every expense with a category, see who paid, and which participants are split in.",
@@ -20,7 +20,7 @@ const screens = [
     description: "Visualise spending by category with charts. See budget vs. actual at a glance.",
   },
   {
-    src: "/screenshots/settlement-payments.png",
+    src: "/screenshots/settlement-payments.webp",
     alt: "Settlement – recorded payments",
     label: "Easy Settlement",
     description: "See outstanding debts, record payments, and mark them completed when settled.",

@@ -66,7 +66,7 @@ export function Hero() {
           <div className="mx-auto max-w-xs">
             <div className="relative drop-shadow-2xl">
               <Image
-                src="/screenshots/expenses-list.png"
+                src="/screenshots/expenses-list.webp"
                 alt="Trevvy app – Expenses screen"
                 width={390}
                 height={844}
