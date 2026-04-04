@@ -36,10 +36,15 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="hidden md:block">
-          <Button asChild className="rounded-full px-6">
+        <div className="hidden md:flex md:items-center md:gap-2">
+          <Button asChild variant="outline" size="sm" className="rounded-full px-4">
             <Link href="https://apps.apple.com/app/trevvy/id6754640654" target="_blank" rel="noopener noreferrer">
-              Download App
+              App Store
+            </Link>
+          </Button>
+          <Button asChild size="sm" className="rounded-full px-4">
+            <Link href="https://play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split" target="_blank" rel="noopener noreferrer">
+              Google Play
             </Link>
           </Button>
         </div>
@@ -93,9 +98,14 @@ export function Header() {
             >
               Privacy
             </Link>
-            <Button asChild className="rounded-full w-full mt-2">
+            <Button asChild variant="outline" className="rounded-full w-full mt-2">
               <Link href="https://apps.apple.com/app/trevvy/id6754640654" target="_blank" rel="noopener noreferrer">
-                Download App
+                App Store
+              </Link>
+            </Button>
+            <Button asChild className="rounded-full w-full">
+              <Link href="https://play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split" target="_blank" rel="noopener noreferrer">
+                Google Play
               </Link>
             </Button>
           </div>
