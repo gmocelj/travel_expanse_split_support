@@ -37,12 +37,12 @@ export function Header() {
         </div>
 
         <div className="hidden md:flex md:items-center md:gap-2">
-          <Button asChild variant="outline" size="sm" className="rounded-full px-4">
+          <Button asChild variant="outline" size="sm" className="rounded-full px-4 hover:shadow-md transition-all">
             <Link href="https://apps.apple.com/app/trevvy/id6754640654" target="_blank" rel="noopener noreferrer">
               App Store
             </Link>
           </Button>
-          <Button asChild size="sm" className="rounded-full px-4">
+          <Button asChild size="sm" className="rounded-full px-4 hover:shadow-md hover:shadow-primary/30 transition-all">
             <Link href="https://play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split" target="_blank" rel="noopener noreferrer">
               Google Play
             </Link>
