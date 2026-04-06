@@ -5,13 +5,13 @@ export const dynamic = 'force-static'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://trevvy.app',
+      url: 'https://trevvy.app/',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://trevvy.app/privacy',
+      url: 'https://trevvy.app/privacy/',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,

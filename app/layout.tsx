@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   creator: 'Trevvy',
   publisher: 'Trevvy',
   alternates: {
-    canonical: '/',
+    canonical: 'https://trevvy.app/',
   },
   openGraph: {
     type: 'website',
