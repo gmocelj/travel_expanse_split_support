@@ -3,8 +3,11 @@ import { Footer } from "@/components/landing/footer"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Trevvy",
+  title: "Privacy Policy",
   description: "Learn how Trevvy collects, uses, and protects your personal information.",
+  alternates: {
+    canonical: 'https://trevvy.app/privacy/',
+  },
 }
 
 export default function PrivacyPolicy() {
