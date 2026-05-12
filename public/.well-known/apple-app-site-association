@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["H7W8YJ8H8V.com.gmocelj.travelexpanseSplit"],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "Matches any invite join link"
+          },
+          {
+            "/": "/auth/callback",
+            "comment": "Matches the Supabase auth callback"
+          }
+        ]
+      }
+    ]
+  }
+}
