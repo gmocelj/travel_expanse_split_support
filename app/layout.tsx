@@ -59,13 +59,8 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: [
-      { url: '/icon-dark-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-icon.png',
-  },
+  // Favicon + apple-touch-icon come from app/icon.png and app/apple-icon.png
+  // (Next.js file-based metadata) — the Trevvy app mark, not the old v0 default.
 }
 
 export default function RootLayout({
