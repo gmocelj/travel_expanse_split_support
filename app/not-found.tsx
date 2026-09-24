@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const APP_STORE_URL = 'https://apps.apple.com/app/id6741434953'
+const APP_STORE_URL = 'https://apps.apple.com/app/trevvy/id6754640654'
 const GOOGLE_PLAY_URL =
   'https://play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split'
 
