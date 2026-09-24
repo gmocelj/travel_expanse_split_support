@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.gmocelj.travel_expanse_split",
+      "sha256_cert_fingerprints": [
+        "02:A2:26:A8:6B:A9:30:A1:FF:AB:58:CB:FD:09:8C:D5:E5:C0:E5:6C:42:20:C6:3B:C9:49:86:93:35:F8:89:F8",
+        "64:83:5B:84:C7:6E:FA:D8:01:48:CE:DD:20:45:09:1B:97:7E:9F:B3:18:A3:06:F1:DE:8B:E9:E2:5B:C9:94:0A"
+      ]
+    }
+  }
+]
