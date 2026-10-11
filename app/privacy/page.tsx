@@ -1,152 +1,124 @@
-import { Header } from "@/components/landing/header"
-import { Footer } from "@/components/landing/footer"
 import type { Metadata } from "next"
+import Link from "next/link"
+import { LegalList, LegalPage, LegalSection, LegalText, SupportContact } from "@/components/legal/legal-page"
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Learn how Trevvy collects, uses, and protects your personal information.",
   alternates: {
-    canonical: 'https://trevvy.app/privacy/',
+    canonical: "https://trevvy.app/privacy/",
   },
 }
 
+const strong = "text-foreground"
+
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen">
-      <Header />
-      
-      <section className="pt-32 pb-24 lg:pt-40 lg:pb-32">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Legal</p>
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance">
-              Privacy Policy
-            </h1>
-            <p className="mt-4 text-muted-foreground">
-              Last updated: March 5, 2026
-            </p>
-          </div>
+    <LegalPage eyebrow="Legal" title="Privacy Policy" updated="October 11, 2026">
+      <LegalSection title="Overview">
+        <LegalText>
+          Trevvy helps you track and split travel expenses. This policy explains what Trevvy stores, where, why, and
+          how you can delete it. In short: without an account everything stays on your phone; with an account your
+          trips are also stored on our servers so you can back them up and share them.
+        </LegalText>
+      </LegalSection>
 
-          <div className="prose prose-gray max-w-none">
-            <div className="space-y-8">
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Overview</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  Trevvy is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
-                </p>
-              </section>
+      <LegalSection title="Using Trevvy without an account">
+        <LegalText>
+          You can use Trevvy without signing in. Then all your data stays on your device and is never sent to us:
+          trips, participants, expenses, settlements, categories, receipt photos and app preferences. Uninstalling
+          the app deletes it.
+        </LegalText>
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Data Collection</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  Trevvy does <strong className="text-foreground">not</strong> collect, store, or transmit any personal data to external servers. All trip data, expenses, and settings are stored locally on your device.
-                </p>
-              </section>
+      <LegalSection title="Using Trevvy with an account">
+        <LegalText>
+          You can sign in with Apple, with Google, or with your email address. When you do, we store on our servers:
+        </LegalText>
+        <LegalList
+          items={[
+            <><strong className={strong}>Account details:</strong> your email address (with Sign in with Apple this can be a private relay address), the display name you choose, and an account identifier.</>,
+            <><strong className={strong}>Your trips:</strong> trip names, currencies, dates and budgets; participants; expenses (amounts, categories, notes, who paid and how they are split); settlements; custom categories; and whether you archived a trip.</>,
+            <><strong className={strong}>Sharing:</strong> which trips you are a member of, your role, and invitations you create.</>,
+          ]}
+        />
+        <LegalText>
+          We use this data to back up your trips, to restore them when you sign in on another phone, and to share
+          trips with the people you invite. <strong className={strong}>Receipt photos are never uploaded</strong>; they
+          stay on your device.
+        </LegalText>
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">What Data Is Stored Locally</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  The following data is stored only on your device:
-                </p>
-                <ul className="mt-3 space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <span>Trip names and details</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <span>Participant names</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <span>Expense records (amounts, categories, splits)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <span>Settlement records</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <span>App preferences (theme, date format)</span>
-                  </li>
-                </ul>
-                <p className="text-muted-foreground leading-relaxed mt-4">
-                  This data never leaves your device and is not accessible to us or any third party.
-                </p>
-              </section>
+      <LegalSection title="Who can see your data">
+        <LegalList
+          items={[
+            "Your trips are visible only to you, unless you share them.",
+            "When you share a trip, its members see that trip's data and your display name.",
+            <>Members see your email address only if you turn on <strong className={strong}>Show my email to trip members</strong> in Settings. Apple private relay addresses are never shown.</>,
+            "We do not sell your data and do not use it for advertising.",
+          ]}
+        />
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Third-Party Services</h2>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-lg font-medium text-foreground mb-2">RevenueCat</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      We use RevenueCat to manage in-app subscriptions. RevenueCat may collect anonymous purchase data and device identifiers as described in their{" "}
-                      <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">privacy policy</a>.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-foreground mb-2">Apple App Store</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Subscription purchases are processed by Apple. {"Apple's"} privacy policy applies to all transactions made through the App Store.
-                    </p>
-                  </div>
-                </div>
-              </section>
+      <LegalSection title="Service providers">
+        <LegalText>We use these providers to run Trevvy. They process data only to provide their service:</LegalText>
+        <LegalList
+          items={[
+            <><strong className={strong}>Supabase</strong> hosts our database and sign-in (account details and trips of signed-in users).</>,
+            <><strong className={strong}>Apple</strong> (Sign in with Apple, App Store purchases) and <strong className={strong}>Google</strong> (Google Sign-In, Google Play purchases).</>,
+            <><strong className={strong}>RevenueCat</strong> manages subscriptions and links purchases to your account identifier (<a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">privacy policy</a>).</>,
+            <><strong className={strong}>ExchangeRate-API</strong> provides exchange rates; no personal data is sent to it.</>,
+          ]}
+        />
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Data Deletion</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  All data stored by the app is kept locally on your device. To permanently delete all your data, simply uninstall the app. No data is held on external servers, so no additional deletion steps are required.
-                </p>
-              </section>
+      <LegalSection title="Security">
+        <LegalText>
+          Data is encrypted in transit (HTTPS). Access on our servers is restricted by row-level rules, so every
+          request can only read the trips of its own account or the trips shared with it.
+        </LegalText>
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Advertising and Tracking</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  Trevvy does not use any advertising SDKs, tracking frameworks, or analytics services that collect personal data. No user behaviour is tracked or shared with third parties for marketing purposes.
-                </p>
-              </section>
+      <LegalSection title="Retention and deletion">
+        <LegalText>
+          We keep your account data as long as you have an account. You can delete your account at any time in the
+          app (Settings → Account → Delete account) or by email; see{" "}
+          <Link href="/delete-account" className="text-primary hover:underline">
+            Delete your account
+          </Link>{" "}
+          for what is deleted and what is kept. Deletion takes effect immediately; copies in our hosting
+          provider&apos;s backups expire within 30 days.
+        </LegalText>
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Exchange Rates</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  When using the multi-currency feature, the app may fetch exchange rates from an external API. No personal data is sent in these requests.
-                </p>
-              </section>
+      <LegalSection title="Your rights">
+        <LegalText>
+          You can see and change your data in the app, change your display name in Settings, and delete your account
+          there. To request a copy of your data or ask a question about it, contact us. If you are in the EU or UK,
+          you also have the right to complain to your data protection authority.
+        </LegalText>
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">{"Children's"} Privacy</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  Trevvy does not knowingly collect any information from children under 13 years of age.
-                </p>
-              </section>
+      <LegalSection title="Advertising and tracking">
+        <LegalText>
+          Trevvy contains no advertising, no tracking and no analytics that collect personal data.
+        </LegalText>
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Changes to This Policy</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.
-                </p>
-              </section>
+      <LegalSection title="Children's privacy">
+        <LegalText>Trevvy does not knowingly collect any information from children under 13 years of age.</LegalText>
+      </LegalSection>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Contact Us</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  If you have any questions about this Privacy Policy, please contact us at:
-                </p>
-                <div className="mt-4 p-6 bg-muted rounded-2xl">
-                  <p className="font-medium text-foreground">Trevvy Support</p>
-                  <a href="mailto:support@trevvy.app" className="text-primary hover:underline">
-                    support@trevvy.app
-                  </a>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
+      <LegalSection title="Changes to this policy">
+        <LegalText>
+          We may update this policy from time to time. Changes are published on this page with a new date.
+        </LegalText>
+      </LegalSection>
 
-      <Footer />
-    </main>
+      <LegalSection title="Contact us">
+        <LegalText>If you have any questions about this policy, contact us at:</LegalText>
+        <SupportContact />
+      </LegalSection>
+    </LegalPage>
   )
 }

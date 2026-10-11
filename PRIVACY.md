@@ -1,56 +1,65 @@
 # Privacy Policy
 
-**Last updated:** March 5, 2026
+**Last updated:** October 11, 2026
+
+The published version is https://trevvy.app/privacy/ (`app/privacy/page.tsx`); this file mirrors it.
 
 ## Overview
 
-Trevvy ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our app.
+Trevvy helps you track and split travel expenses. Without an account everything stays on your phone; with an account your trips are also stored on our servers so you can back them up and share them.
 
-## Data Collection
+## Using Trevvy without an account
 
-Trevvy does **not** collect, store, or transmit any personal data to external servers. All trip data, expenses, and settings are stored locally on your device.
+All your data stays on your device and is never sent to us: trips, participants, expenses, settlements, categories, receipt photos and app preferences. Uninstalling the app deletes it.
 
-## What Data Is Stored Locally
+## Using Trevvy with an account
 
-The following data is stored only on your device:
+You can sign in with Apple, with Google, or with your email address. We then store on our servers:
 
-- Trip names and details
-- Participant names
-- Expense records (amounts, categories, splits)
-- Settlement records
-- App preferences (theme, date format)
+- **Account details:** email address (with Sign in with Apple this can be a private relay address), the display name you choose, and an account identifier.
+- **Your trips:** trip names, currencies, dates and budgets; participants; expenses (amounts, categories, notes, who paid and how they are split); settlements; custom categories; and whether you archived a trip.
+- **Sharing:** which trips you are a member of, your role, and invitations you create.
 
-This data never leaves your device and is not accessible to us or any third party.
+We use this data to back up your trips, restore them on another phone, and share trips with the people you invite. **Receipt photos are never uploaded.**
 
-## Third-Party Services
+## Who can see your data
 
-**RevenueCat:** We use RevenueCat to manage in-app subscriptions. RevenueCat may collect anonymous purchase data and device identifiers as described in their [privacy policy](https://www.revenuecat.com/privacy/).
+- Your trips are visible only to you, unless you share them.
+- Members of a trip you share see that trip's data and your display name.
+- Members see your email only if you turn on "Show my email to trip members"; Apple relay addresses are never shown.
+- We do not sell your data and do not use it for advertising.
 
-**Apple App Store:** Subscription purchases are processed by Apple. Apple's privacy policy applies to all transactions made through the App Store.
+## Service providers
 
-## Data Deletion
+- **Supabase:** database and sign-in hosting.
+- **Apple** (Sign in with Apple, App Store purchases) and **Google** (Google Sign-In, Google Play purchases).
+- **RevenueCat:** subscriptions, linked to your account identifier ([privacy policy](https://www.revenuecat.com/privacy/)).
+- **ExchangeRate-API:** exchange rates; no personal data is sent.
 
-All data stored by the app is kept locally on your device. To permanently delete all your data, simply uninstall the app. No data is held on external servers, so no additional deletion steps are required.
+## Security
 
-## Advertising and Tracking
+Data is encrypted in transit (HTTPS). Server access is restricted by row-level rules to the trips of the requesting account or shared with it.
 
-Trevvy does not use any advertising SDKs, tracking frameworks, or analytics services that collect personal data. No user behaviour is tracked or shared with third parties for marketing purposes.
+## Retention and deletion
 
-## Exchange Rates
+We keep your account data as long as you have an account. Delete it in the app (Settings → Account → Delete account) or by email — see https://trevvy.app/delete-account/. Deletion takes effect immediately; copies in our hosting provider's backups expire within 30 days.
 
-When using the multi-currency feature, the app may fetch exchange rates from an external API. No personal data is sent in these requests.
+## Your rights
 
-## Children's Privacy
+You can see and change your data in the app and delete your account there. To request a copy of your data, contact us. In the EU or UK you can also complain to your data protection authority.
+
+## Advertising and tracking
+
+No advertising, no tracking, no analytics that collect personal data.
+
+## Children's privacy
 
 Trevvy does not knowingly collect any information from children under 13 years of age.
 
-## Changes to This Policy
+## Changes to this policy
 
-We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.
+Changes are published on this page with a new date.
 
-## Contact Us
-
-If you have any questions about this Privacy Policy, please contact us at:
+## Contact us
 
 **Email:** [support@trevvy.app](mailto:support@trevvy.app)
-
