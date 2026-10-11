@@ -17,23 +17,43 @@ Thank you for using Trevvy! If you need help or have any questions, we're here f
 <details markdown="1">
   <summary markdown="1">What's included in Premium?</summary>
 
-  Premium unlocks unlimited trips and people, QR and OCR receipt scanning, analytics dashboard, and live exchange rates for multi-currency trips.
+  Premium unlocks unlimited trips (the free version allows 7 active trips), trip sharing, QR and OCR receipt scanning, the analytics dashboard, and live exchange rates for multi-currency trips. A Trip Pass unlocks the same features for a single trip for 17 days, except sharing, which needs a subscription.
 </details>
 
 <details markdown="1">
   <summary markdown="1">Which countries are supported for QR receipt scanning?</summary>
 
-  QR scanning works natively with official electronic receipt formats from the following countries:
+  QR scanning works natively with official electronic receipt formats from these 27 countries:
 
   | Country | Format |
   |---------|--------|
-  | 🇧🇷 Brazil | NFC-e (Nota Fiscal do Consumidor Eletrônica) |
-  | 🇸🇦 Saudi Arabia | ZATCA / Fatoora e-invoice |
-  | 🇨🇳 China | Fapiao electronic invoice |
-  | 🇮🇳 India | GST invoice QR code |
-  | 🇹🇼 Taiwan | Cloud invoice (電子發票) |
+  | 🇦🇷 Argentina | AFIP electronic invoice |
   | 🇦🇹 Austria | RKSV fiscal receipt |
+  | 🇧🇴 Bolivia | SIN / SIAT fiscal receipt |
+  | 🇧🇷 Brazil | NFC-e electronic receipt |
+  | 🇨🇳 China | Fapiao electronic invoice |
+  | 🇨🇴 Colombia | DIAN e-invoice |
+  | 🇭🇷 Croatia | Fiskalizacija fiscal receipt |
+  | 🇨🇿 Czech Republic | EET fiscal receipt |
+  | 🇪🇨 Ecuador | SRI electronic invoice |
+  | 🇪🇬 Egypt | ETA e-Receipt |
+  | 🇭🇺 Hungary | NAV online invoice |
+  | 🇮🇳 India | GST invoice QR code |
+  | 🇮🇹 Italy | Lotteria degli Scontrini |
+  | 🇰🇪 Kenya | KRA eTIMS fiscal receipt |
+  | 🇰🇷 South Korea | Cash receipt |
+  | 🇲🇽 Mexico | SAT CFDI electronic invoice |
   | 🇵🇹 Portugal | AT invoice QR code |
+  | 🇷🇴 Romania | e-Factura ANAF |
+  | 🇷🇺 Russia | OFD fiscal receipt |
+  | 🇸🇦 Saudi Arabia | ZATCA / Fatoora e-invoice |
+  | 🇷🇸 Serbia | PURS fiscal receipt |
+  | 🇸🇰 Slovakia | eKasa fiscal receipt |
+  | 🇸🇮 Slovenia | FURS fiscal receipt |
+  | 🇪🇸 Spain | TicketBAI / Verifactu |
+  | 🇹🇼 Taiwan | Cloud invoice (電子發票) |
+  | 🇹🇭 Thailand | e-Tax Invoice |
+  | 🇺🇦 Ukraine | PRRO fiscal receipt |
 
   In addition, the app can parse QR receipts in **JSON format**, **key-value text format** (used by some point-of-sale systems globally), and **URL-based receipts** (receipts that link to a web page with the invoice details).
 
@@ -49,27 +69,45 @@ Thank you for using Trevvy! If you need help or have any questions, we're here f
 </details>
 
 <details markdown="1">
-  <summary markdown="1">Is my data stored in the cloud?</summary>
+  <summary markdown="1">How do I share a trip with friends?</summary>
 
-  No. All your data is stored locally on your device. No account is required and no data leaves your device.
+  Open the trip and tap Share, then send the invite link. Friends who join can add and edit expenses with you and see changes live. Sharing needs a Premium subscription for the trip owner; invited friends join for free and need the latest version of Trevvy.
 </details>
 
 <details markdown="1">
-  <summary markdown="1">How do I delete my data?</summary>
+  <summary markdown="1">Do I need an account?</summary>
 
-  Simply delete the app from your device. This permanently removes all trips, expenses, settlements, and preferences stored locally. There is no account or cloud backup to delete separately.
+  No. Trevvy works without an account. Sign in with Apple, Google, or your email (Settings → Account) only if you want to back up your trips or share them.
+</details>
+
+<details markdown="1">
+  <summary markdown="1">Is my data stored in the cloud?</summary>
+
+  Only if you sign in. Without an account all your data stays on your device. With an account your trips are also stored on our servers so they are backed up and can be shared; receipt photos always stay on your device. See the [Privacy Policy](privacy/).
+</details>
+
+<details markdown="1">
+  <summary markdown="1">How do I get my trips on a new phone?</summary>
+
+  Sign in with the same account on the new phone; your backed-up trips are downloaded automatically. Receipt photos are not backed up.
+</details>
+
+<details markdown="1">
+  <summary markdown="1">How do I delete my data or my account?</summary>
+
+  Without an account, delete the app; this removes everything stored on your device. With an account, go to Settings → Account → Delete account: your account and its trips are deleted from our servers and from the phone, while trips you shared stay with their members, read-only. See [Delete your account](delete-account/) for details and for deleting without the app.
 </details>
 
 <details markdown="1">
   <summary markdown="1">My subscription isn't working — what do I do?</summary>
 
-  First, try tapping "Restore Purchases" on the subscription screen. If the issue persists, contact Apple Support for billing and payment issues, as all purchases are processed by Apple. For anything else, reach out to us at [support@trevvy.app](mailto:support@trevvy.app).
+  First, try tapping "Restore Purchases" on the subscription screen. If the issue persists, contact Apple or Google Play support for billing and payment issues, as all purchases are processed by the App Store or Google Play. For anything else, reach out to us at [support@trevvy.app](mailto:support@trevvy.app).
 </details>
 
 <details markdown="1">
   <summary markdown="1">How do I get a refund?</summary>
 
-  Refunds are handled by Apple. Please visit [reportaproblem.apple.com](https://reportaproblem.apple.com) to request a refund for any App Store purchase.
+  Refunds are handled by the store you bought from. For the App Store, visit [reportaproblem.apple.com](https://reportaproblem.apple.com); for Google Play, see [Google Play refunds](https://support.google.com/googleplay/answer/2479637).
 </details>
 
 ## Disclaimer
@@ -78,7 +116,7 @@ Trevvy is a tool to help you track and organize shared expenses. All calculation
 
 ## Privacy Policy
 
-Trevvy does not collect, store, or share any personal data. All trip and expense data is stored locally on your device.
+Without an account, all trip and expense data stays on your device. With an account, your email, display name and trips are stored on our servers for backup and sharing. We do not sell your data or use it for advertising.
 
 Read the full [Privacy Policy](privacy/).
 
