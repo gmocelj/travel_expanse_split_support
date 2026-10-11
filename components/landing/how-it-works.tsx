@@ -11,7 +11,7 @@ const steps = [
     step: "02",
     icon: UserPlus,
     title: "Add participants",
-    description: "Manually add your travel companions by name — no account needed.",
+    description: "Add your travel companions by name, or invite them with a link to add expenses together.",
   },
   {
     step: "03",

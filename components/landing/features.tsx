@@ -1,4 +1,4 @@
-import { Calculator, Users, ArrowRightLeft, ScanLine, BarChart2, Globe } from "lucide-react"
+import { Calculator, Users, ArrowRightLeft, ScanLine, BarChart2, Globe, Share2, CloudUpload } from "lucide-react"
 
 const features = [
   {
@@ -10,6 +10,16 @@ const features = [
     icon: Users,
     title: "Perfect for group trips",
     description: "Track accommodation, food, transport, and activities all in one place.",
+  },
+  {
+    icon: Share2,
+    title: "Share trips with friends",
+    description: "Invite friends with a link. Everyone adds expenses to the same trip and sees changes live. Friends join for free.",
+  },
+  {
+    icon: CloudUpload,
+    title: "Backup across phones",
+    description: "Sign in and your trips are backed up to your account, so you get them back on a new phone. No account needed to start.",
   },
   {
     icon: ArrowRightLeft,
@@ -24,12 +34,12 @@ const features = [
   {
     icon: Globe,
     title: "Multi-currency support",
-    description: "Travel abroad without worry. Live exchange rates keep all amounts accurate in any currency.",
+    description: "Log expenses in any currency with your own rate, or let live exchange rates keep every amount accurate.",
   },
   {
     icon: BarChart2,
     title: "Analytics dashboard",
-    description: "See spending breakdowns by category, person, and day to understand where your money went.",
+    description: "See spending by category and budget vs. actual for each trip, and your spending across all trips in a year.",
   },
 ]
 
@@ -43,7 +53,7 @@ export function Features() {
             Everything you need to split expenses
           </h2>
           <p className="mt-4 text-lg text-muted-foreground text-pretty">
-            Focus on enjoying your trip while Trevvy handles the money math. QR/OCR scanning, multi-currency, and analytics require Premium.
+            Focus on enjoying your trip while Trevvy handles the money math. Trip sharing, QR/OCR scanning, live exchange rates, and analytics require Premium.
           </p>
         </div>
 

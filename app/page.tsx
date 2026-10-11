@@ -8,6 +8,7 @@ import { FAQ } from "@/components/landing/faq"
 import { DownloadCTA } from "@/components/landing/download-cta"
 import { Support } from "@/components/landing/support"
 import { Footer } from "@/components/landing/footer"
+import { faqs } from "@/lib/faqs"
 
 const APP_STORE_ID = '6754640654'
 
@@ -33,64 +34,11 @@ async function fetchAppStoreRating(): Promise<{ ratingValue: string; ratingCount
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is Trevvy?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Trevvy is a travel expense splitting app for iOS and Android. Create a trip, add friends, log shared expenses, and Trevvy calculates who owes what — with optimized settlement suggestions so everyone pays as few transfers as possible.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is Trevvy free?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Creating trips, adding participants, logging expenses, and viewing balances is completely free with up to 7 active trips. Premium unlocks QR/OCR receipt scanning, multi-currency support, analytics dashboard, and unlimited trips.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How does QR receipt scanning work?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Point your camera at a fiscal receipt QR code and Trevvy reads the total amount, currency, tax ID, and invoice number directly from the QR data. For most countries this works fully offline — no internet needed.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does Trevvy support multiple currencies?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. With Premium you can log expenses in any currency. Trevvy fetches live exchange rates so all balances stay accurate regardless of which currencies were used.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is my data stored online?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. All trip data, expenses, and settings are stored locally on your device. Nothing is sent to external servers. To delete all data, simply uninstall the app.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do I need an account to use Trevvy?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. Trevvy works without sign-up or login. Just download and start creating trips immediately.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is a Trip Pass?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A Trip Pass is a one-time purchase that unlocks all Premium features for a single trip for 17 days. It\'s ideal if you only need Premium for one trip without committing to a subscription.',
-      },
-    },
-  ],
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
 }
 
 export default async function Home() {
@@ -100,7 +48,7 @@ export default async function Home() {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'Trevvy',
-    description: 'Track shared costs, settle balances, and enjoy your trip with friends. The simple, fast, and stress-free way to split travel expenses — no account required.',
+    description: 'Track shared costs, settle balances, and enjoy your trip with friends. The simple, fast, and stress-free way to split travel expenses — share a trip so everyone adds expenses together.',
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: ['iOS', 'Android'],
     url: 'https://trevvy.app',
@@ -111,10 +59,11 @@ export default async function Home() {
     },
     featureList: [
       'Expense splitting with optimized settlement',
+      'Trip sharing with live updates',
       'QR receipt scanning for 27 countries',
       'Multi-currency support with live exchange rates',
       'Spending analytics and charts',
-      'Offline-first, no account required',
+      'Offline-first; optional account for backup and sharing',
       'Trip Pass for single-trip premium access',
     ],
     screenshot: [

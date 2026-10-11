@@ -34,7 +34,7 @@ export function Hero() {
           {/* Subheadline */}
           <p className="mt-6 text-lg leading-8 text-muted-foreground sm:text-xl max-w-2xl mx-auto text-pretty">
             Track shared costs, settle balances, and enjoy your trip.
-            Add participants, log expenses by category, and see who owes what — all stored privately on your device.
+            Add participants, log expenses by category, and see who owes what — or share the trip so friends add expenses with you.
           </p>
 
           {/* CTA Buttons */}

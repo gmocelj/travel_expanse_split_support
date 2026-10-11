@@ -110,7 +110,8 @@ function JoinPage({ token }: { token: string }) {
 
         {/* Hint */}
         <p className="text-sm text-muted-foreground/70">
-          If you already have Trevvy installed, tap &ldquo;Open in Trevvy&rdquo; above.
+          If you already have Trevvy installed, tap &ldquo;Open in Trevvy&rdquo; above. Joining a trip needs the
+          latest version of the app.
         </p>
       </div>
     </main>
