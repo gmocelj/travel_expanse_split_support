@@ -62,11 +62,11 @@ export const es: Dictionary = {
       backup: {
         title: 'Copia de seguridad en tu cuenta',
         description:
-          'Inicia sesión y tus viajes se guardan en tu cuenta, así los recuperas en un móvil nuevo. Para empezar no necesitas cuenta.',
+          'Inicia sesión y tus viajes se guardan en tu cuenta, así los recuperas en un teléfono nuevo. Para empezar no necesitas cuenta.',
       },
       settle: {
         title: 'Liquida con menos pagos',
-        description: 'Mira exactamente quién tiene que pagar a quién, con el menor número de transferencias.',
+        description: 'Mira exactamente quién tiene que pagar a quién, con el menor número de pagos.',
       },
       scan: {
         title: 'Escaneo de tickets',
@@ -238,7 +238,7 @@ export const es: Dictionary = {
       {
         question: '¿Cómo optimiza Trevvy las liquidaciones?',
         answer:
-          'Trevvy usa un algoritmo de simplificación de deudas que busca el menor número de pagos para que todos queden a cero. En lugar de que todos paguen a todos, obtienes la lista de transferencias más corta.',
+          'Trevvy usa un algoritmo de simplificación de deudas que busca el menor número de pagos para que todos queden a cero. En lugar de que todos paguen a todos, obtienes la lista de pagos más corta.',
       },
       {
         question: '¿Puedo exportar los datos del viaje?',

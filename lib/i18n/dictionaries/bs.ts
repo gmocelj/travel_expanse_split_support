@@ -184,7 +184,7 @@ export const bs: Dictionary = {
       {
         question: 'Koja aplikacija je najbolja za podjelu troškova puta?',
         answer:
-          'Zavisi šta vašem društvu treba. Opće aplikacije za dijeljenje računa, kao što su Splitwise ili Tricount, dobre su za svakodnevne troškove. Trevvy je napravljen baš za putovanja: radi bez interneta i bez korisničkog računa, podržava preko 150 valuta, skenira QR kodove fiskalnih računa iz 27 zemalja i izmiruje dugove s najmanje uplata. Besplatan je za do 7 aktivnih putovanja.',
+          'Zavisi šta tvom društvu treba. Opće aplikacije za dijeljenje računa, kao što su Splitwise ili Tricount, dobre su za svakodnevne troškove. Trevvy je napravljen baš za putovanja: radi bez interneta i bez korisničkog računa, podržava preko 150 valuta, skenira QR kodove fiskalnih računa iz 27 zemalja i izmiruje dugove s najmanje uplata. Besplatan je za do 7 aktivnih putovanja.',
       },
       {
         question: 'Da li je Trevvy besplatan?',

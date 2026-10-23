@@ -66,7 +66,7 @@ export const de: Dictionary = {
       },
       settle: {
         title: 'Abrechnen mit wenigen Zahlungen',
-        description: 'Du siehst genau, wer wem zahlen muss — mit so wenigen Überweisungen wie möglich.',
+        description: 'Du siehst genau, wer wem zahlen muss — mit so wenigen Zahlungen wie möglich.',
       },
       scan: {
         title: 'Belege scannen',
@@ -178,7 +178,7 @@ export const de: Dictionary = {
       {
         question: 'Was ist Trevvy?',
         answer:
-          'Trevvy ist eine App zum Teilen von Reisekosten für iOS und Android. Leg eine Reise an, füge Freunde hinzu, erfasse gemeinsame Ausgaben — Trevvy berechnet, wer wem wie viel schuldet, und schlägt eine Abrechnung mit möglichst wenigen Überweisungen vor.',
+          'Trevvy ist eine App zum Teilen von Reisekosten für iOS und Android. Leg eine Reise an, füge Freunde hinzu, erfasse gemeinsame Ausgaben — Trevvy berechnet, wer wem wie viel schuldet, und schlägt eine Abrechnung mit möglichst wenigen Zahlungen vor.',
       },
       {
         question: 'Welche App ist am besten, um Reisekosten mit Freunden zu teilen?',
@@ -238,7 +238,7 @@ export const de: Dictionary = {
       {
         question: 'Wie optimiert Trevvy die Abrechnung?',
         answer:
-          'Trevvy nutzt einen Algorithmus zur Schuldenvereinfachung, der die kleinste Zahl an Zahlungen findet, damit alle quitt sind. Statt dass jeder jedem zahlt, bekommst du die kürzeste Liste an Überweisungen.',
+          'Trevvy nutzt einen Algorithmus zur Schuldenvereinfachung, der die kleinste Zahl an Zahlungen findet, damit alle quitt sind. Statt dass jeder jedem zahlt, bekommst du die kürzeste Liste an Zahlungen.',
       },
       {
         question: 'Kann ich meine Reisedaten exportieren?',

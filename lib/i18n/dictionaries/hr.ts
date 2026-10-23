@@ -19,7 +19,7 @@ export const hr: Dictionary = {
     ],
     ogTitle: 'Trevvy – podjela troškova putovanja s prijateljima',
     ogDescription:
-      'Bilježi zajedničke troškove, podijeli ih s društvom i vidi tko kome koliko duguje. Bez računa, radi i bez interneta.',
+      'Bilježi zajedničke troškove, podijeli ih s društvom i vidi tko kome koliko duguje. Bez korisničkog računa, radi i bez interneta.',
   },
   nav: {
     features: 'Mogućnosti',
@@ -61,9 +61,9 @@ export const hr: Dictionary = {
           'Pozovi prijatelje poveznicom. Svi upisuju troškove u isto putovanje i odmah vide promjene. Prijatelji se pridružuju besplatno.',
       },
       backup: {
-        title: 'Sigurnosna kopija na računu',
+        title: 'Sigurnosna kopija na korisničkom računu',
         description:
-          'Prijavi se i putovanja su spremljena na tvom računu, pa ih vraćaš i na novom mobitelu. Za početak ti račun ne treba.',
+          'Prijavi se i putovanja su spremljena na tvom korisničkom računu, pa ih vraćaš i na novom mobitelu. Za početak ti korisnički račun ne treba.',
       },
       settle: {
         title: 'Podmirivanje s najmanje uplata',
@@ -184,7 +184,7 @@ export const hr: Dictionary = {
       {
         question: 'Koja je aplikacija najbolja za podjelu troškova putovanja?',
         answer:
-          'Ovisi što vašem društvu treba. Opće aplikacije za dijeljenje računa, poput Splitwisea ili Tricounta, dobre su za svakodnevne troškove. Trevvy je napravljen baš za putovanja: radi bez interneta i bez računa, podržava više od 150 valuta, skenira QR kodove fiskalnih računa iz 27 zemalja (i iz Hrvatske) i podmiruje dugove s najmanje uplata. Besplatan je za do 7 aktivnih putovanja.',
+          'Ovisi što tvojem društvu treba. Opće aplikacije za dijeljenje računa, poput Splitwisea ili Tricounta, dobre su za svakodnevne troškove. Trevvy je napravljen baš za putovanja: radi bez interneta i bez korisničkog računa, podržava više od 150 valuta, skenira QR kodove fiskalnih računa iz 27 zemalja (i iz Hrvatske) i podmiruje dugove s najmanje uplata. Besplatan je za do 7 aktivnih putovanja.',
       },
       {
         question: 'Je li Trevvy besplatan?',
@@ -222,19 +222,19 @@ export const hr: Dictionary = {
           'Da. Svaki trošak možeš upisati u bilo kojoj valuti i unijeti svoj tečaj; svako putovanje ima svoju osnovnu valutu. Premium sam preuzima tečajeve uživo.',
       },
       {
-        question: 'Trebam li račun za korištenje?',
+        question: 'Trebam li korisnički račun?',
         answer:
           'Ne. Trevvy radi bez registracije — preuzmi ga i odmah stvaraj putovanja. Prijavi se putem Applea, Googlea ili e-pošte samo ako želiš sigurnosnu kopiju putovanja ili ih dijeliti s prijateljima.',
       },
       {
         question: 'Čuvaju li se moji podaci na internetu?',
         answer:
-          'Samo ako se prijaviš. Bez računa sve ostaje na tvom mobitelu. S računom se putovanja spremaju i na naše poslužitelje, kako bi imala sigurnosnu kopiju i mogla se dijeliti; fotografije računa uvijek ostaju na mobitelu. Detalji su u Pravilima privatnosti.',
+          'Samo ako se prijaviš. Bez korisničkog računa sve ostaje na tvom mobitelu. S korisničkim računom se putovanja spremaju i na naše poslužitelje, kako bi imala sigurnosnu kopiju i mogla se dijeliti; fotografije računa uvijek ostaju na mobitelu. Detalji su u Pravilima privatnosti.',
       },
       {
-        question: 'Kako obrisati račun?',
+        question: 'Kako obrisati korisnički račun?',
         answer:
-          'U aplikaciji idi na Postavke → Račun → Obriši račun. Brišu se račun i putovanja spremljena na njemu; putovanja koja si dijelio ostaju članovima, samo za čitanje. Brisanje možeš zatražiti i na trevvy.app/delete-account.',
+          'U aplikaciji idi na Postavke → Račun → Obriši račun. Brišu se korisnički račun i putovanja spremljena na njemu; putovanja koja si dijelio ostaju članovima, samo za čitanje. Brisanje možeš zatražiti i na trevvy.app/delete-account.',
       },
       {
         question: 'Što je Trip Pass?',
@@ -255,7 +255,7 @@ export const hr: Dictionary = {
   cta: {
     title: 'Sljedeće putovanje bez svađe oko novca',
     subtitle: 'Preuzmi Trevvy i posveti se uspomenama, a ne tablicama.',
-    note: 'Besplatno preuzimanje • Račun nije potreban',
+    note: 'Besplatno preuzimanje • Korisnički račun nije potreban',
   },
   support: {
     eyebrow: 'Podrška',
@@ -278,7 +278,7 @@ export const hr: Dictionary = {
     contact: 'Kontakt',
     legal: 'Pravno',
     privacy: 'Pravila privatnosti',
-    deleteAccount: 'Brisanje računa',
+    deleteAccount: 'Brisanje korisničkog računa',
     languages: 'Jezici',
     rights: 'Sva prava pridržana.',
   },
@@ -291,7 +291,7 @@ export const hr: Dictionary = {
       'Skeniranje QR fiskalnih računa iz 27 zemalja',
       'Više valuta i tečajevi uživo',
       'Analitika i grafikoni potrošnje',
-      'Radi bez interneta; račun samo za sigurnosnu kopiju i dijeljenje',
+      'Radi bez interneta; korisnički račun samo za sigurnosnu kopiju i dijeljenje',
       'Trip Pass za Premium na jednom putovanju',
       'Na hrvatskom, srpskom, bosanskom, engleskom, ruskom, njemačkom i španjolskom',
     ],
