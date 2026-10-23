@@ -1,15 +1,18 @@
 import { MetadataRoute } from 'next'
+import { homeAlternates, homeUrl, locales } from '@/lib/i18n/config'
 
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const languages = homeAlternates()
   return [
-    {
-      url: 'https://trevvy.app/',
+    ...locales.map((locale) => ({
+      url: homeUrl(locale),
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 1,
-    },
+      alternates: { languages },
+    })),
     {
       url: 'https://trevvy.app/privacy/',
       lastModified: new Date(),

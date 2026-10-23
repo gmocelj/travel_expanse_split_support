@@ -1,43 +1,24 @@
-import { MapPin, UserPlus, Receipt, PieChart } from "lucide-react"
+import { MapPin, UserPlus, Receipt, PieChart, type LucideIcon } from "lucide-react"
+import type { Dictionary, StepKey } from "@/lib/i18n/types"
 
-const steps = [
-  {
-    step: "01",
-    icon: MapPin,
-    title: "Create a trip",
-    description: "Start by creating a new trip and give it a memorable name.",
-  },
-  {
-    step: "02",
-    icon: UserPlus,
-    title: "Add participants",
-    description: "Add your travel companions by name, or invite them with a link to add expenses together.",
-  },
-  {
-    step: "03",
-    icon: Receipt,
-    title: "Record expenses",
-    description: "Log expenses as they happen. Trevvy keeps track of everything.",
-  },
-  {
-    step: "04",
-    icon: PieChart,
-    title: "Trevvy calculates",
-    description: "Get instant balance updates and see who owes what.",
-  },
+const steps: { key: StepKey; step: string; icon: LucideIcon }[] = [
+  { key: "create", step: "01", icon: MapPin },
+  { key: "participants", step: "02", icon: UserPlus },
+  { key: "record", step: "03", icon: Receipt },
+  { key: "calculate", step: "04", icon: PieChart },
 ]
 
-export function HowItWorks() {
+export function HowItWorks({ t }: { t: Dictionary["howItWorks"] }) {
   return (
     <section id="how-it-works" className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">How It Works</p>
+          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">{t.eyebrow}</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-            Get started in minutes
+            {t.title}
           </h2>
           <p className="mt-4 text-lg text-muted-foreground text-pretty">
-            Simple steps to stress-free expense splitting.
+            {t.subtitle}
           </p>
         </div>
 
@@ -46,8 +27,8 @@ export function HowItWorks() {
           <div className="hidden lg:block absolute top-24 left-[12.5%] right-[12.5%] h-0.5 bg-border" />
           
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
-            {steps.map((step, index) => (
-              <div key={step.title} className="relative text-center">
+            {steps.map((step) => (
+              <div key={step.key} className="relative text-center">
                 {/* Step Number Circle */}
                 <div className="relative mx-auto mb-6">
                   <div className="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary shadow-lg shadow-primary/25">
@@ -59,10 +40,10 @@ export function HowItWorks() {
                 </div>
                 
                 <h3 className="text-xl font-semibold text-foreground mb-3">
-                  {step.title}
+                  {t.steps[step.key].title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  {step.description}
+                  {t.steps[step.key].description}
                 </p>
               </div>
             ))}

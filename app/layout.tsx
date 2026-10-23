@@ -3,12 +3,12 @@ import { Inter, DM_Sans } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ 
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   variable: "--font-inter"
 });
 
 const dmSans = DM_Sans({ 
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-dm-sans"
 });
 
@@ -68,7 +68,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${dmSans.variable} dark`}>
+    // lang is rewritten per language in the static HTML by scripts/set-html-lang.mjs,
+    // hence suppressHydrationWarning.
+    <html lang="en" className={`${inter.variable} ${dmSans.variable} dark`} suppressHydrationWarning>
       <head>
         {/* Security: Content Security Policy */}
         <meta

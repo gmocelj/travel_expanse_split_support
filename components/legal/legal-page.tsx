@@ -1,6 +1,10 @@
 import type { ReactNode } from "react"
 import { Header } from "@/components/landing/header"
 import { Footer } from "@/components/landing/footer"
+import { getDictionary } from "@/lib/i18n"
+
+// The legal pages are English-only.
+const t = getDictionary("en")
 
 /** Shared layout of the legal pages (privacy policy, account deletion). */
 export function LegalPage({
@@ -16,7 +20,7 @@ export function LegalPage({
 }) {
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header locale="en" t={t.nav} />
 
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
@@ -34,7 +38,7 @@ export function LegalPage({
         </div>
       </section>
 
-      <Footer />
+      <Footer locale="en" t={t.footer} nav={t.nav} />
     </main>
   )
 }

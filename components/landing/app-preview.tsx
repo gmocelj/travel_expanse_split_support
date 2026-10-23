@@ -1,60 +1,41 @@
 import Image from "next/image"
+import type { Dictionary, ScreenKey } from "@/lib/i18n/types"
 
-const screens = [
-  {
-    src: "/screenshots/travels-list.webp",
-    alt: "Travels list – manage your trips",
-    label: "Your Travels",
-    description: "Create trips, set budgets, and track spending across all your travels in one place.",
-  },
-  {
-    src: "/screenshots/expenses-list.webp",
-    alt: "Expenses list with categories",
-    label: "Track Expenses",
-    description: "Log every expense with a category, see who paid, and which participants are split in.",
-  },
-  {
-    src: "/screenshots/analytics-chart.png",
-    alt: "Analytics – spending by category donut chart",
-    label: "Spending Analytics",
-    description: "Visualise spending by category with charts. See budget vs. actual at a glance.",
-  },
-  {
-    src: "/screenshots/settlement-payments.webp",
-    alt: "Settlement – recorded payments",
-    label: "Easy Settlement",
-    description: "See outstanding debts, record payments, and mark them completed when settled.",
-  },
+const screens: { key: ScreenKey; src: string }[] = [
+  { key: "travels", src: "/screenshots/travels-list.webp" },
+  { key: "expenses", src: "/screenshots/expenses-list.webp" },
+  { key: "analytics", src: "/screenshots/analytics-chart.png" },
+  { key: "settlement", src: "/screenshots/settlement-payments.webp" },
 ]
 
-export function AppPreview() {
+export function AppPreview({ t }: { t: Dictionary["preview"] }) {
   return (
     <section className="py-24 lg:py-32 bg-card">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">App Preview</p>
+          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">{t.eyebrow}</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-            Beautiful, intuitive design
+            {t.title}
           </h2>
           <p className="mt-4 text-lg text-muted-foreground text-pretty">
-            Designed for real travel situations with a focus on speed and clarity.
+            {t.subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {screens.map((screen) => (
-            <div key={screen.label} className="group flex flex-col items-center">
+            <div key={screen.key} className="group flex flex-col items-center">
               <div className="relative w-full drop-shadow-xl transition-transform duration-300 group-hover:-translate-y-2">
                 <Image
                   src={screen.src}
-                  alt={screen.alt}
+                  alt={t.screens[screen.key].alt}
                   width={390}
                   height={844}
                   className="rounded-[2rem] w-full ring-2 ring-primary/40"
                 />
               </div>
-              <p className="mt-5 text-sm font-semibold text-foreground">{screen.label}</p>
-              <p className="mt-1 text-xs text-muted-foreground text-center text-pretty">{screen.description}</p>
+              <p className="mt-5 text-sm font-semibold text-foreground">{t.screens[screen.key].title}</p>
+              <p className="mt-1 text-xs text-muted-foreground text-center text-pretty">{t.screens[screen.key].description}</p>
             </div>
           ))}
         </div>

@@ -1,17 +1,18 @@
 import { Mail, MessageCircle, FileText } from "lucide-react"
 import Link from "next/link"
+import type { Dictionary } from "@/lib/i18n/types"
 
-export function Support() {
+export function Support({ t }: { t: Dictionary["support"] }) {
   return (
     <section id="support" className="py-24 lg:py-32 bg-card">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Support</p>
+          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">{t.eyebrow}</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
-            We're here to help
+            {t.title}
           </h2>
           <p className="mt-4 text-lg text-muted-foreground text-pretty">
-            If you experience issues or have questions about Trevvy, please contact us.
+            {t.subtitle}
           </p>
         </div>
 
@@ -22,10 +23,10 @@ export function Support() {
               <Mail className="h-6 w-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold text-foreground mb-2">
-              Email Support
+              {t.emailTitle}
             </h3>
             <p className="text-muted-foreground mb-4">
-              Get help via email.
+              {t.emailText}
             </p>
             <a 
               href="mailto:support@trevvy.app" 
@@ -41,13 +42,13 @@ export function Support() {
               <MessageCircle className="h-6 w-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold text-foreground mb-2">
-              In-App Support
+              {t.inAppTitle}
             </h3>
             <p className="text-muted-foreground mb-4">
-              Access help directly from the app.
+              {t.inAppText}
             </p>
             <span className="text-muted-foreground text-sm">
-              Settings → Help & Support
+              {t.inAppPath}
             </span>
           </div>
 
@@ -57,16 +58,16 @@ export function Support() {
               <FileText className="h-6 w-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold text-foreground mb-2">
-              Privacy Policy
+              {t.privacyTitle}
             </h3>
             <p className="text-muted-foreground mb-4">
-              Learn how we protect your data.
+              {t.privacyText}
             </p>
             <Link 
-              href="/privacy" 
+              href="/privacy/" 
               className="text-primary font-medium hover:underline"
             >
-              Read Privacy Policy
+              {t.privacyLink}
             </Link>
           </div>
         </div>

@@ -38,6 +38,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Test the static export
+        run: pnpm test
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
