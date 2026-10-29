@@ -23,43 +23,10 @@ Thank you for using Trevvy! If you need help or have any questions, we're here f
 <details markdown="1">
   <summary markdown="1">Which countries are supported for QR receipt scanning?</summary>
 
-  QR scanning works natively with official electronic receipt formats from these 27 countries:
+  QR scanning supports selected receipt formats, including fiscal receipts from **Serbia and Croatia**. Available data depends on the receipt format. Some QR codes include their data directly; others need an internet connection to retrieve it. Review the extracted amount, currency and date before saving.
 
-  | Country | Format |
-  |---------|--------|
-  | 🇦🇷 Argentina | AFIP electronic invoice |
-  | 🇦🇹 Austria | RKSV fiscal receipt |
-  | 🇧🇴 Bolivia | SIN / SIAT fiscal receipt |
-  | 🇧🇷 Brazil | NFC-e electronic receipt |
-  | 🇨🇳 China | Fapiao electronic invoice |
-  | 🇨🇴 Colombia | DIAN e-invoice |
-  | 🇭🇷 Croatia | Fiskalizacija fiscal receipt |
-  | 🇨🇿 Czech Republic | EET fiscal receipt |
-  | 🇪🇨 Ecuador | SRI electronic invoice |
-  | 🇪🇬 Egypt | ETA e-Receipt |
-  | 🇭🇺 Hungary | NAV online invoice |
-  | 🇮🇳 India | GST invoice QR code |
-  | 🇮🇹 Italy | Lotteria degli Scontrini |
-  | 🇰🇪 Kenya | KRA eTIMS fiscal receipt |
-  | 🇰🇷 South Korea | Cash receipt |
-  | 🇲🇽 Mexico | SAT CFDI electronic invoice |
-  | 🇵🇹 Portugal | AT invoice QR code |
-  | 🇷🇴 Romania | e-Factura ANAF |
-  | 🇷🇺 Russia | OFD fiscal receipt |
-  | 🇸🇦 Saudi Arabia | ZATCA / Fatoora e-invoice |
-  | 🇷🇸 Serbia | PURS fiscal receipt |
-  | 🇸🇰 Slovakia | eKasa fiscal receipt |
-  | 🇸🇮 Slovenia | FURS fiscal receipt |
-  | 🇪🇸 Spain | TicketBAI / Verifactu |
-  | 🇹🇼 Taiwan | Cloud invoice (電子發票) |
-  | 🇹🇭 Thailand | e-Tax Invoice |
-  | 🇺🇦 Ukraine | PRRO fiscal receipt |
+  **OCR scanning can be used for printed receipts from any country.** It is independent of the fiscal QR format. Results depend on image quality, language and receipt layout; review the extracted fields before saving or enter missing details manually.
 
-  In addition, the app can parse QR receipts in **JSON format**, **key-value text format** (used by some point-of-sale systems globally), and **URL-based receipts** (receipts that link to a web page with the invoice details).
-
-  **OCR scanning** (scanning a photo of a printed receipt) works with receipts from any country, as it reads the text directly from the image. Results may vary depending on receipt clarity, font, and language.
-
-  If your country is not listed above, OCR scanning is the best option for automatically reading receipt details. Support for additional QR formats may be added in future updates — feel free to [contact us](mailto:support@trevvy.app) to request your country.
 </details>
 
 <details markdown="1">

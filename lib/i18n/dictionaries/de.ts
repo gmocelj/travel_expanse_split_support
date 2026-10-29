@@ -71,7 +71,7 @@ export const de: Dictionary = {
       scan: {
         title: 'Belege scannen',
         description:
-          'Scanne den QR-Code von Kassenbelegen aus 27 Ländern, darunter Österreich und Spanien — Trevvy übernimmt Betrag, Währung und Steuerdaten.',
+          "Scanne unterstützte Beleg-QR-Codes oder nutze OCR für gedruckte Belege aus jedem Land. Prüfe Betrag, Währung und Datum vor dem Speichern.",
       },
       currency: {
         title: 'Mehrere Währungen',
@@ -86,10 +86,10 @@ export const de: Dictionary = {
   },
   countries: {
     eyebrow: 'QR-Beleg-Scan',
-    title: '27 Länder unterstützt',
+    title: "Formate für Fiskalbeleg-QR-Codes",
     subtitle:
-      'Trevvy liest die QR-Codes offizieller Kassenbelege. Einfach scannen — Betrag, Währung und Steuerdaten werden automatisch ausgefüllt.',
-    footnote: 'Dazu allgemeine Unterstützung für JSON-, Schlüssel-Wert- und URL-basierte Belegformate.',
+      "Unterstützte Formate umfassen Fiskalbelege aus Serbien und Kroatien. Die verfügbaren Daten hängen vom Belegformat ab.",
+    footnote: "OCR lässt sich für gedruckte Belege aus jedem Land nutzen. Ergebnisse hängen von Bildqualität, Sprache und Layout ab. Manche QR-Belege benötigen Internet.",
     names: {
       AR: 'Argentinien',
       AT: 'Österreich',
@@ -183,7 +183,7 @@ export const de: Dictionary = {
       {
         question: 'Welche App ist am besten, um Reisekosten mit Freunden zu teilen?',
         answer:
-          'Das hängt davon ab, was eure Gruppe braucht. Allgemeine Apps wie Splitwise oder Tricount eignen sich gut für Alltagsausgaben. Trevvy ist speziell für Reisen gemacht: funktioniert offline und ohne Konto, unterstützt über 150 Währungen, scannt QR-Codes von Kassenbelegen aus 27 Ländern und rechnet mit möglichst wenigen Zahlungen ab. Kostenlos für bis zu 7 aktive Reisen.',
+          "Trevvy ist für Reisen gemacht: Gruppenausgaben teilen, Budgets in über 150 Währungen verfolgen und Belege scannen. Die grundlegende Ausgabenerfassung funktioniert offline ohne Konto. QR-Scans unterstützen ausgewählte Formate; OCR lässt sich für gedruckte Belege aus jedem Land nutzen. Kostenlos für bis zu 7 aktive Reisen.",
       },
       {
         question: 'Ist Trevvy kostenlos?',
@@ -203,12 +203,12 @@ export const de: Dictionary = {
       {
         question: 'Wie funktioniert der QR-Scan von Belegen?',
         answer:
-          'Richte die Kamera auf den QR-Code eines Kassenbelegs und Trevvy liest Betrag, Währung, Steuernummer und Belegnummer direkt aus dem QR-Code. Für die meisten Länder funktioniert das komplett offline. Die Daten füllen das Ausgabenformular aus, sodass du die Ausgabe in Sekunden hinzufügst.',
+          "Scanne einen unterstützten Beleg-QR-Code, um das Ausgabenformular mit den verfügbaren Angaben zu füllen. Manche Codes enthalten die Daten direkt, andere brauchen Internet zum Abrufen. Prüfe Betrag, Währung und Datum vor dem Speichern.",
       },
       {
         question: 'Belege aus welchen Ländern kann ich scannen?',
         answer:
-          'Trevvy liest QR-Codes offizieller Kassenbelege aus 27 Ländern: Argentinien, Österreich, Bolivien, Brasilien, China, Kolumbien, Kroatien, Tschechien, Ecuador, Ägypten, Ungarn, Indien, Italien, Kenia, Südkorea, Mexiko, Portugal, Rumänien, Russland, Saudi-Arabien, Serbien, Slowakei, Slowenien, Spanien, Taiwan, Thailand und Ukraine. Außerdem allgemeine JSON-, Schlüssel-Wert- und URL-Belegformate aus jedem Land.',
+          "Unterstützte Formate umfassen Fiskalbelege aus Serbien und Kroatien. Die verfügbaren Daten hängen vom Belegformat ab. OCR lässt sich für gedruckte Belege aus jedem Land nutzen. Ergebnisse hängen von Bildqualität, Sprache und Layout ab. Manche QR-Belege benötigen Internet.",
       },
       {
         question: 'Unterstützt Trevvy mehrere Währungen?',
@@ -282,7 +282,7 @@ export const de: Dictionary = {
     featureList: [
       'Kosten teilen mit Abrechnung über möglichst wenige Zahlungen',
       'Reisen teilen mit Live-Updates',
-      'QR-Scan von Kassenbelegen aus 27 Ländern',
+      "Unterstützte Fiskalbeleg-QR-Formate und OCR für gedruckte Belege aus jedem Land",
       'Mehrere Währungen und Live-Wechselkurse',
       'Ausgaben-Statistiken und Diagramme',
       'Offline nutzbar; Konto nur für Backup und Teilen',

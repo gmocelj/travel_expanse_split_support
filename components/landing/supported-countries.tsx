@@ -2,33 +2,8 @@ import type { CountryKey, Dictionary } from "@/lib/i18n/types"
 
 // Standard names stay in their original form; country names come from the dictionary.
 const countries: { flag: string; code: CountryKey; standard: string }[] = [
-  { flag: "🇦🇷", code: "AR", standard: "AFIP electronic invoice" },
-  { flag: "🇦🇹", code: "AT", standard: "RKSV fiscal receipt" },
-  { flag: "🇧🇴", code: "BO", standard: "SIN / SIAT fiscal receipt" },
-  { flag: "🇧🇷", code: "BR", standard: "NFC-e electronic receipt" },
-  { flag: "🇨🇳", code: "CN", standard: "Fapiao electronic invoice" },
-  { flag: "🇨🇴", code: "CO", standard: "DIAN e-invoice" },
   { flag: "🇭🇷", code: "HR", standard: "Fiskalizacija fiscal receipt" },
-  { flag: "🇨🇿", code: "CZ", standard: "EET fiscal receipt" },
-  { flag: "🇪🇨", code: "EC", standard: "SRI electronic invoice" },
-  { flag: "🇪🇬", code: "EG", standard: "ETA e-Receipt" },
-  { flag: "🇭🇺", code: "HU", standard: "NAV online invoice" },
-  { flag: "🇮🇳", code: "IN", standard: "GST invoice QR code" },
-  { flag: "🇮🇹", code: "IT", standard: "Lotteria degli Scontrini" },
-  { flag: "🇰🇪", code: "KE", standard: "KRA eTIMS fiscal receipt" },
-  { flag: "🇰🇷", code: "KR", standard: "Cash receipt" },
-  { flag: "🇲🇽", code: "MX", standard: "SAT CFDI electronic invoice" },
-  { flag: "🇵🇹", code: "PT", standard: "AT invoice QR code" },
-  { flag: "🇷🇴", code: "RO", standard: "e-Factura ANAF" },
-  { flag: "🇷🇺", code: "RU", standard: "OFD fiscal receipt" },
-  { flag: "🇸🇦", code: "SA", standard: "ZATCA / Fatoora e-invoice" },
   { flag: "🇷🇸", code: "RS", standard: "PURS fiscal receipt" },
-  { flag: "🇸🇰", code: "SK", standard: "eKasa fiscal receipt" },
-  { flag: "🇸🇮", code: "SI", standard: "FURS fiscal receipt" },
-  { flag: "🇪🇸", code: "ES", standard: "TicketBAI / Verifactu" },
-  { flag: "🇹🇼", code: "TW", standard: "Cloud invoice" },
-  { flag: "🇹🇭", code: "TH", standard: "e-Tax Invoice" },
-  { flag: "🇺🇦", code: "UA", standard: "PRRO fiscal receipt" },
 ]
 
 export function SupportedCountries({ t }: { t: Dictionary["countries"] }) {
@@ -47,7 +22,7 @@ export function SupportedCountries({ t }: { t: Dictionary["countries"] }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-3xl mx-auto">
           {countries.map((country) => (
             <div
               key={country.code}

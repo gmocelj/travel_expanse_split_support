@@ -72,7 +72,7 @@ export const hr: Dictionary = {
       scan: {
         title: 'Skeniranje fiskalnih računa',
         description:
-          'Skeniraj QR kod fiskalnog računa iz 27 zemalja, uključujući Hrvatsku — Trevvy sam upiše iznos, valutu i podatke o porezu.',
+          "Skeniraj podržane fiskalne QR račune ili koristi OCR za ispisane račune iz bilo koje zemlje. Provjeri iznos, valutu i datum prije spremanja.",
       },
       currency: {
         title: 'Više valuta',
@@ -87,10 +87,10 @@ export const hr: Dictionary = {
   },
   countries: {
     eyebrow: 'Skeniranje QR računa',
-    title: 'Podržano 27 zemalja',
+    title: "Formati fiskalnih QR računa",
     subtitle:
-      'Trevvy čita QR kodove službenih fiskalnih računa. Skeniraš račun, a iznos, valuta i podaci o porezu upišu se sami.',
-    footnote: 'Uz to su podržani i opći JSON, ključ-vrijednost i URL formati računa.',
+      "Podržani formati uključuju fiskalne račune iz Hrvatske i Srbije. Dostupni podaci ovise o formatu računa.",
+    footnote: "OCR možeš koristiti za ispisane račune iz bilo koje zemlje. Rezultat ovisi o kvaliteti slike, jeziku i rasporedu teksta. Za neke QR račune treba internet.",
     names: {
       AR: 'Argentina',
       AT: 'Austrija',
@@ -184,7 +184,7 @@ export const hr: Dictionary = {
       {
         question: 'Koja je aplikacija najbolja za podjelu troškova putovanja?',
         answer:
-          'Ovisi što tvojem društvu treba. Opće aplikacije za dijeljenje računa, poput Splitwisea ili Tricounta, dobre su za svakodnevne troškove. Trevvy je napravljen baš za putovanja: radi bez interneta i bez korisničkog računa, podržava više od 150 valuta, skenira QR kodove fiskalnih računa iz 27 zemalja (i iz Hrvatske) i podmiruje dugove s najmanje uplata. Besplatan je za do 7 aktivnih putovanja.',
+          "Trevvy je napravljen za putovanja: podijeli troškove društva, prati proračun u više od 150 valuta i skeniraj račune. Osnovno bilježenje troškova radi bez interneta i bez korisničkog računa. QR skeniranje podržava odabrane formate, a OCR možeš koristiti za ispisane račune iz bilo koje zemlje. Besplatno za do 7 aktivnih putovanja.",
       },
       {
         question: 'Je li Trevvy besplatan?',
@@ -209,12 +209,12 @@ export const hr: Dictionary = {
       {
         question: 'Kako radi skeniranje QR koda s računa?',
         answer:
-          'Usmjeriš kameru prema QR kodu fiskalnog računa i Trevvy pročita ukupan iznos, valutu, OIB i broj računa izravno iz QR koda. Za većinu zemalja to radi potpuno bez interneta. Podaci se sami upišu u trošak, pa ga dodaješ u putovanje za par sekundi.',
+          "Skeniraj podržani QR kod računa da popuniš trošak dostupnim podacima. Neki kodovi sadrže podatke izravno, dok drugi trebaju internet za njihovo preuzimanje. Provjeri iznos, valutu i datum prije spremanja.",
       },
       {
         question: 'Iz kojih zemalja mogu skenirati fiskalne račune?',
         answer:
-          'Trevvy čita QR kodove službenih fiskalnih računa iz 27 zemalja: Argentina, Austrija, Bolivija, Brazil, Kina, Kolumbija, Hrvatska, Češka, Ekvador, Egipat, Mađarska, Indija, Italija, Kenija, Južna Koreja, Meksiko, Portugal, Rumunjska, Rusija, Saudijska Arabija, Srbija, Slovačka, Slovenija, Španjolska, Tajvan, Tajland i Ukrajina. Podržani su i opći JSON, ključ-vrijednost i URL formati računa iz bilo koje zemlje.',
+          "Podržani formati uključuju fiskalne račune iz Hrvatske i Srbije. Dostupni podaci ovise o formatu računa. OCR možeš koristiti za ispisane račune iz bilo koje zemlje. Rezultat ovisi o kvaliteti slike, jeziku i rasporedu teksta. Za neke QR račune treba internet.",
       },
       {
         question: 'Podržava li Trevvy više valuta?',
@@ -288,7 +288,7 @@ export const hr: Dictionary = {
     featureList: [
       'Podjela troškova s podmirivanjem uz najmanje uplata',
       'Dijeljenje putovanja s promjenama uživo',
-      'Skeniranje QR fiskalnih računa iz 27 zemalja',
+      "Podržani fiskalni QR formati i OCR za ispisane račune iz bilo koje zemlje",
       'Više valuta i tečajevi uživo',
       'Analitika i grafikoni potrošnje',
       'Radi bez interneta; korisnički račun samo za sigurnosnu kopiju i dijeljenje',

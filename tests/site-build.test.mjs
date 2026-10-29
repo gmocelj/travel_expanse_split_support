@@ -65,6 +65,17 @@ for (const [code, l] of Object.entries(LOCALES)) {
     assert.ok(faq.mainEntity.length >= 10, 'FAQ should have at least 10 questions')
   })
 
+  test(`${code}: country examples and receipt claims match the app listing`, () => {
+    const html = readPage(l.dir)
+    const section = html.match(/<section id="supported-countries"[\s\S]*?<\/section>/)?.[0] ?? ''
+    assert.ok(section.includes('PURS fiscal receipt'))
+    assert.ok(section.includes('Fiskalizacija fiscal receipt'))
+    assert.equal((section.match(/class="text-2xl"/g) ?? []).length, 2, 'Only verified country examples should be advertised')
+    const blocks = jsonLd(html)
+    assert.ok(!/\b27\b/.test(JSON.stringify(blocks)), 'Old coverage promise in search structured data')
+    assert.ok(section.includes('OCR'), 'The country-independent OCR alternative must stay visible')
+  })
+
   test(`${code}: links to every language`, () => {
     const html = readPage(l.dir)
     for (const o of Object.values(LOCALES)) {

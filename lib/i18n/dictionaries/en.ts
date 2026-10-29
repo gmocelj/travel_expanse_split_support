@@ -70,7 +70,7 @@ export const en: Dictionary = {
       scan: {
         title: 'QR & OCR receipt scanning',
         description:
-          'Scan fiscal receipt QR codes from 27 countries — Trevvy reads the total, currency, and tax details automatically.',
+          "Scan supported fiscal receipt QR codes or use OCR for printed receipts from any country. Review extracted amounts, currencies and dates before saving.",
       },
       currency: {
         title: 'Multi-currency support',
@@ -86,10 +86,10 @@ export const en: Dictionary = {
   },
   countries: {
     eyebrow: 'QR Receipt Scanning',
-    title: '27 countries supported',
+    title: "Fiscal receipt QR formats",
     subtitle:
-      'Trevvy natively reads official fiscal receipt QR codes. Just scan and the amount, currency, and tax details are filled in automatically.',
-    footnote: 'Plus generic support for any JSON, key-value, or URL-based receipt format.',
+      "Supported formats include fiscal receipts from Serbia and Croatia. Available data depends on the receipt format.",
+    footnote: "OCR can be used for printed receipts from any country. Results depend on image quality, language and layout. Some QR receipts need internet.",
     names: {
       AR: 'Argentina',
       AT: 'Austria',
@@ -183,7 +183,7 @@ export const en: Dictionary = {
       {
         question: 'Which app is best for splitting travel expenses with friends?',
         answer:
-          'It depends on what your group needs. General bill-splitting apps such as Splitwise or Tricount work well for everyday costs. Trevvy is built for trips: it works offline without an account, handles 150+ currencies, scans fiscal receipt QR codes from 27 countries, and settles up with the fewest payments. It is free for up to 7 active trips.',
+          "Trevvy is built for travel: split group expenses, track budgets in 150+ currencies and scan receipts. Core expense tracking works offline without an account. QR scanning supports selected formats; OCR can be used for printed receipts from any country. Free for up to 7 active trips.",
       },
       {
         question: 'Is Trevvy free?',
@@ -203,12 +203,12 @@ export const en: Dictionary = {
       {
         question: 'How does QR receipt scanning work?',
         answer:
-          'Point your camera at a fiscal receipt QR code and Trevvy reads the total amount, currency, tax ID, and invoice number directly from the QR data. For most countries this works fully offline — no internet needed. The scanned data pre-fills the expense form so you can add it to your trip in seconds.',
+          "Scan a supported receipt QR code to pre-fill the expense form with the available details. Some QR codes include data directly; others need an internet connection to retrieve it. Review the extracted amount, currency and date before saving.",
       },
       {
         question: 'Which countries are supported for QR scanning?',
         answer:
-          'Trevvy supports official fiscal receipt QR codes from 27 countries: Argentina, Austria, Bolivia, Brazil, China, Colombia, Croatia, Czech Republic, Ecuador, Egypt, Hungary, India, Italy, Kenya, South Korea, Mexico, Portugal, Romania, Russia, Saudi Arabia, Serbia, Slovakia, Slovenia, Spain, Taiwan, Thailand, and Ukraine. It also handles generic JSON, key-value, and URL-based receipt formats from any country.',
+          "Supported formats include fiscal receipts from Serbia and Croatia. Available data depends on the receipt format. OCR can be used for printed receipts from any country. Results depend on image quality, language and layout. Some QR receipts need internet.",
       },
       {
         question: 'Does Trevvy support multiple currencies?',
@@ -282,7 +282,7 @@ export const en: Dictionary = {
     featureList: [
       'Expense splitting with optimized settlement',
       'Trip sharing with live updates',
-      'QR receipt scanning for 27 countries',
+      "Supported fiscal QR formats and OCR for printed receipts from any country",
       'Multi-currency support with live exchange rates',
       'Spending analytics and charts',
       'Offline-first; optional account for backup and sharing',

@@ -71,7 +71,7 @@ export const es: Dictionary = {
       scan: {
         title: 'Escaneo de tickets',
         description:
-          'Escanea el código QR de tickets fiscales de 27 países, incluidos España, México y Argentina: Trevvy rellena el importe, la moneda y los datos fiscales.',
+          "Escanea QR de recibos fiscales compatibles o usa OCR para recibos impresos de cualquier país. Revisa el importe, la moneda y la fecha antes de guardar.",
       },
       currency: {
         title: 'Varias monedas',
@@ -86,10 +86,10 @@ export const es: Dictionary = {
   },
   countries: {
     eyebrow: 'Escaneo de tickets QR',
-    title: '27 países compatibles',
+    title: "Formatos de recibos fiscales QR",
     subtitle:
-      'Trevvy lee los códigos QR de tickets fiscales oficiales. Escanea y el importe, la moneda y los datos fiscales se rellenan solos.',
-    footnote: 'Además, compatibilidad general con formatos de ticket JSON, clave-valor y basados en URL.',
+      "Los formatos compatibles incluyen recibos fiscales de Serbia y Croacia. Los datos disponibles dependen del formato del recibo.",
+    footnote: "Puedes usar OCR para recibos impresos de cualquier país. Los resultados dependen de la calidad de imagen, el idioma y el diseño del recibo. Algunos QR necesitan internet.",
     names: {
       AR: 'Argentina',
       AT: 'Austria',
@@ -183,7 +183,7 @@ export const es: Dictionary = {
       {
         question: '¿Cuál es la mejor app para dividir gastos de viaje con amigos?',
         answer:
-          'Depende de lo que necesite tu grupo. Las apps generales como Splitwise o Tricount van bien para gastos del día a día. Trevvy está hecho para viajar: funciona sin conexión y sin cuenta, admite más de 150 monedas, escanea códigos QR de tickets fiscales de 27 países y liquida con el menor número de pagos. Es gratis hasta 7 viajes activos.',
+          "Trevvy está hecho para viajar: divide gastos del grupo, controla presupuestos en más de 150 monedas y escanea recibos. El registro básico de gastos funciona sin conexión y sin cuenta. Los QR admiten formatos seleccionados; puedes usar OCR para recibos impresos de cualquier país. Gratis hasta 7 viajes activos.",
       },
       {
         question: '¿Trevvy es gratis?',
@@ -203,12 +203,12 @@ export const es: Dictionary = {
       {
         question: '¿Cómo funciona el escaneo QR de tickets?',
         answer:
-          'Apunta la cámara al código QR de un ticket fiscal y Trevvy lee el importe total, la moneda, el NIF/RFC y el número de factura directamente del QR. En la mayoría de los países funciona totalmente sin conexión. Los datos rellenan el formulario del gasto para que lo añadas en segundos.',
+          "Escanea un QR compatible para rellenar el gasto con los datos disponibles. Algunos códigos contienen los datos directamente; otros necesitan internet para obtenerlos. Revisa el importe, la moneda y la fecha antes de guardar.",
       },
       {
         question: '¿De qué países puedo escanear tickets?',
         answer:
-          'Trevvy lee códigos QR de tickets fiscales oficiales de 27 países: Argentina, Austria, Bolivia, Brasil, China, Colombia, Croacia, Chequia, Ecuador, Egipto, Hungría, India, Italia, Kenia, Corea del Sur, México, Portugal, Rumania, Rusia, Arabia Saudita, Serbia, Eslovaquia, Eslovenia, España, Taiwán, Tailandia y Ucrania. También admite formatos genéricos JSON, clave-valor y basados en URL de cualquier país.',
+          "Los formatos compatibles incluyen recibos fiscales de Serbia y Croacia. Los datos disponibles dependen del formato del recibo. Puedes usar OCR para recibos impresos de cualquier país. Los resultados dependen de la calidad de imagen, el idioma y el diseño del recibo. Algunos QR necesitan internet.",
       },
       {
         question: '¿Trevvy admite varias monedas?',
@@ -282,7 +282,7 @@ export const es: Dictionary = {
     featureList: [
       'División de gastos con liquidación en el menor número de pagos',
       'Viajes compartidos con cambios en vivo',
-      'Escaneo QR de tickets fiscales de 27 países',
+      "Formatos fiscales QR compatibles y OCR para recibos impresos de cualquier país",
       'Varias monedas y tipos de cambio en vivo',
       'Estadísticas y gráficos de gastos',
       'Funciona sin conexión; cuenta solo para copia de seguridad y compartir',
