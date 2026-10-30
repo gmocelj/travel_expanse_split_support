@@ -15,6 +15,8 @@ export const prefixedLocales = locales.filter((l) => l !== defaultLocale)
 type LocaleInfo = {
   /** Name of the language in that language, for the language switcher. */
   nativeName: string
+  /** Decorative language marker, shared by header and footer. */
+  flag: string
   /** Value of <html lang>. Serbian is written in Latin script on the site. */
   htmlLang: string
   /** Open Graph locale. */
@@ -22,13 +24,13 @@ type LocaleInfo = {
 }
 
 export const localeInfo: Record<Locale, LocaleInfo> = {
-  en: { nativeName: 'English', htmlLang: 'en', ogLocale: 'en_US' },
-  sr: { nativeName: 'Srpski', htmlLang: 'sr-Latn', ogLocale: 'sr_RS' },
-  hr: { nativeName: 'Hrvatski', htmlLang: 'hr', ogLocale: 'hr_HR' },
-  bs: { nativeName: 'Bosanski', htmlLang: 'bs', ogLocale: 'bs_BA' },
-  ru: { nativeName: 'Русский', htmlLang: 'ru', ogLocale: 'ru_RU' },
-  de: { nativeName: 'Deutsch', htmlLang: 'de', ogLocale: 'de_DE' },
-  es: { nativeName: 'Español', htmlLang: 'es', ogLocale: 'es_ES' },
+  en: { nativeName: 'English', flag: '🇬🇧', htmlLang: 'en', ogLocale: 'en_US' },
+  sr: { nativeName: 'Srpski', flag: '🇷🇸', htmlLang: 'sr-Latn', ogLocale: 'sr_RS' },
+  hr: { nativeName: 'Hrvatski', flag: '🇭🇷', htmlLang: 'hr', ogLocale: 'hr_HR' },
+  bs: { nativeName: 'Bosanski', flag: '🇧🇦', htmlLang: 'bs', ogLocale: 'bs_BA' },
+  ru: { nativeName: 'Русский', flag: '🇷🇺', htmlLang: 'ru', ogLocale: 'ru_RU' },
+  de: { nativeName: 'Deutsch', flag: '🇩🇪', htmlLang: 'de', ogLocale: 'de_DE' },
+  es: { nativeName: 'Español', flag: '🇪🇸', htmlLang: 'es', ogLocale: 'es_ES' },
 }
 
 export function isLocale(value: string): value is Locale {

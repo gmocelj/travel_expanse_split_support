@@ -10,7 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Globe, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { homePath, localeInfo, locales, type Locale } from "@/lib/i18n/config"
 import type { Dictionary } from "@/lib/i18n/types"
 
@@ -104,8 +104,8 @@ function LanguageMenu({ locale, label }: { locale: Locale; label: string }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="rounded-full gap-1.5 px-3" aria-label={label}>
-          <Globe className="h-4 w-4" />
+        <Button variant="ghost" size="sm" className="rounded-full gap-1.5 px-3" aria-label={`${label}: ${localeInfo[locale].nativeName}`}>
+          <span aria-hidden="true" className="text-base leading-none">{localeInfo[locale].flag}</span>
           <span className="uppercase">{locale}</span>
         </Button>
       </DropdownMenuTrigger>
@@ -113,6 +113,7 @@ function LanguageMenu({ locale, label }: { locale: Locale; label: string }) {
         {locales.map((l) => (
           <DropdownMenuItem key={l} asChild>
             <Link href={homePath(l)} hrefLang={localeInfo[l].htmlLang} lang={localeInfo[l].htmlLang} aria-current={l === locale ? "true" : undefined}>
+              <span aria-hidden="true" className="text-base leading-none">{localeInfo[l].flag}</span>
               {localeInfo[l].nativeName}
             </Link>
           </DropdownMenuItem>

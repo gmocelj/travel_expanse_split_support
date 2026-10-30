@@ -6,6 +6,7 @@ import assert from 'node:assert/strict'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { existsSync, readFileSync } from 'node:fs'
+import { localeInfo } from '../lib/i18n/config.ts'
 
 const SITE = 'https://trevvy.app'
 const outDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'out')
@@ -74,6 +75,17 @@ for (const [code, l] of Object.entries(LOCALES)) {
     const blocks = jsonLd(html)
     assert.ok(!/\b27\b/.test(JSON.stringify(blocks)), 'Old coverage promise in search structured data')
     assert.ok(section.includes('OCR'), 'The country-independent OCR alternative must stay visible')
+  })
+
+  test(`${code}: header and footer show language flags alongside language text`, () => {
+    const html = readPage(l.dir)
+    const header = html.match(/<header[\s\S]*?<\/header>/)?.[0] ?? ''
+    const footer = html.match(/<footer[\s\S]*?<\/footer>/)?.[0] ?? ''
+    assert.ok(header.includes(localeInfo[code].flag), 'Current language flag missing from header')
+    for (const info of Object.values(localeInfo)) {
+      assert.ok(footer.includes(info.flag), `Missing footer language flag: ${info.nativeName}`)
+      assert.ok(footer.includes(info.nativeName), 'Flags must not replace readable language names')
+    }
   })
 
   test(`${code}: links to every language`, () => {

@@ -96,8 +96,9 @@ export function Footer({ locale, t, nav }: { locale: Locale; t: Dictionary["foot
                       hrefLang={localeInfo[l].htmlLang}
                       lang={localeInfo[l].htmlLang}
                       aria-current={l === locale ? "true" : undefined}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                     >
+                      <span aria-hidden="true" className="text-base leading-none">{localeInfo[l].flag}</span>
                       {localeInfo[l].nativeName}
                     </Link>
                   </li>
