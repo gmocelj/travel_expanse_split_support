@@ -11,6 +11,10 @@
           {
             "/": "/auth/callback",
             "comment": "Matches the Supabase auth callback"
+          },
+          {
+            "/": "/open/*",
+            "comment": "Store page deep links (scan, new-trip)"
           }
         ]
       }

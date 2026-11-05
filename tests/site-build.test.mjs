@@ -113,3 +113,34 @@ test('Google Play icon uses the fixed path', () => {
   const html = readPage('')
   assert.ok(!html.includes('M3.18 23.76'), 'the broken Google Play SVG path is back')
 })
+
+test('AASA is valid JSON and lists /join/*, /auth/callback and /open/*', () => {
+  const file = path.join(outDir, '.well-known', 'apple-app-site-association')
+  assert.ok(existsSync(file), 'AASA missing from the export')
+  const aasa = JSON.parse(readFileSync(file, 'utf8'))
+  const details = aasa.applinks.details
+  assert.equal(details.length, 1)
+  assert.deepEqual(details[0].appIDs, ['QJGNU5HT8M.com.gmocelj.travelexpanseSplit'])
+  const paths = details[0].components.map((c) => c['/'])
+  assert.deepEqual(paths, ['/join/*', '/auth/callback', '/open/*'])
+})
+
+for (const action of ['scan', 'new-trip']) {
+  test(`out/open/${action}/index.html exists with noindex`, () => {
+    const html = readPage(`open/${action}`)
+    assert.match(html, /<meta name="robots" content="noindex/)
+  })
+}
+
+test('sitemap does not list /open/', () => {
+  const xml = readFileSync(path.join(outDir, 'sitemap.xml'), 'utf8')
+  assert.ok(!xml.includes('/open/'), 'store link fallback pages must stay out of the sitemap')
+})
+
+test('join fallback still renders store buttons', () => {
+  const src = readFileSync(path.join(outDir, '..', 'app', 'not-found.tsx'), 'utf8')
+  assert.ok(src.includes('<StoreButtons'), 'JoinPage should use StoreButtons')
+  const buttons = readFileSync(path.join(outDir, '..', 'components', 'store-buttons.tsx'), 'utf8')
+  assert.ok(buttons.includes('apps.apple.com/app/trevvy/id6754640654'))
+  assert.ok(buttons.includes('play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split'))
+})
