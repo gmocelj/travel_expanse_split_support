@@ -6,10 +6,15 @@ import { StoreButtons } from '@/components/store-buttons'
 import { localeInfo, type Locale } from '@/lib/i18n/config'
 import { joinTexts, pickJoinLocale } from '@/lib/i18n/join'
 import { openTexts, type OpenAction } from '@/lib/i18n/open'
+import type { StorePlacement } from '@/lib/store-links'
 
 const DEEP_LINKS: Record<OpenAction, string> = {
   scan: 'trevvy://open/scan',
   newTrip: 'trevvy://open/new-trip',
+}
+const PLACEMENTS: Record<OpenAction, StorePlacement> = {
+  scan: 'open-scan',
+  newTrip: 'open-new-trip',
 }
 
 /**
@@ -61,7 +66,7 @@ export function OpenPage({ action }: { action: OpenAction }) {
           <p className="text-base text-muted-foreground leading-relaxed">{texts.subtitle}</p>
         </div>
 
-        <StoreButtons deepLink={DEEP_LINKS[action]} texts={joinTexts[locale].join} />
+        <StoreButtons placement={PLACEMENTS[action]} deepLink={DEEP_LINKS[action]} texts={joinTexts[locale].join} />
       </div>
     </main>
   )

@@ -1,22 +1,22 @@
 import type { JoinTexts } from '@/lib/i18n/join'
 
-const APP_STORE_URL = 'https://apps.apple.com/app/trevvy/id6754640654'
-const GOOGLE_PLAY_URL =
-  'https://play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split'
+import { appStoreUrl, googlePlayUrl, type StorePlacement } from '@/lib/store-links'
 
 interface StoreButtonsProps {
+  /** Where the buttons sit; becomes the campaign name on both store links. */
+  placement: StorePlacement
   /** Custom-scheme link behind the "Open in Trevvy" button. */
   deepLink: string
   texts: JoinTexts['join']
 }
 
 /** App Store, Google Play and "Open in Trevvy" buttons shared by the deep link fallback pages. */
-export function StoreButtons({ deepLink, texts }: StoreButtonsProps) {
+export function StoreButtons({ placement, deepLink, texts }: StoreButtonsProps) {
   return (
     <div className="flex flex-col gap-3 w-full">
       {/* Primary CTA */}
       <a
-        href={APP_STORE_URL}
+        href={appStoreUrl(placement)}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary text-primary-foreground font-semibold text-base h-12 px-6 transition-all duration-150 hover:bg-primary/90 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
@@ -35,7 +35,7 @@ export function StoreButtons({ deepLink, texts }: StoreButtonsProps) {
       </a>
 
       <a
-        href={GOOGLE_PLAY_URL}
+        href={googlePlayUrl(placement)}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary text-primary-foreground font-semibold text-base h-12 px-6 transition-all duration-150 hover:bg-primary/90 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"

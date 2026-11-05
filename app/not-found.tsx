@@ -89,7 +89,7 @@ function JoinPage({ token, texts }: JoinPageProps) {
           </p>
         </div>
 
-        <StoreButtons deepLink={deepLink} texts={texts} />
+        <StoreButtons placement="join" deepLink={deepLink} texts={texts} />
 
         {/* Hint */}
         <p className="text-sm text-muted-foreground/70">{texts.hint}</p>

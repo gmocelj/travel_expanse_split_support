@@ -13,9 +13,7 @@ import {
 import { Menu, X } from "lucide-react"
 import { homePath, localeInfo, locales, type Locale } from "@/lib/i18n/config"
 import type { Dictionary } from "@/lib/i18n/types"
-
-const APP_STORE_URL = "https://apps.apple.com/app/trevvy/id6754640654"
-const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split"
+import { appStoreUrl, googlePlayUrl } from "@/lib/store-links"
 
 const linkClass = "whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
 
@@ -50,12 +48,12 @@ export function Header({ locale, t }: { locale: Locale; t: Dictionary["nav"] }) 
         <div className="hidden lg:flex lg:items-center lg:gap-2">
           <LanguageMenu locale={locale} label={t.language} />
           <Button asChild variant="outline" size="sm" className="rounded-full px-4 hover:shadow-md transition-all">
-            <Link href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+            <Link href={appStoreUrl("header")} target="_blank" rel="noopener noreferrer">
               App Store
             </Link>
           </Button>
           <Button asChild size="sm" className="rounded-full px-4 hover:shadow-md hover:shadow-primary/30 transition-all">
-            <Link href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
+            <Link href={googlePlayUrl("header")} target="_blank" rel="noopener noreferrer">
               Google Play
             </Link>
           </Button>
@@ -84,12 +82,12 @@ export function Header({ locale, t }: { locale: Locale; t: Dictionary["nav"] }) 
               </Link>
             ))}
             <Button asChild variant="outline" className="rounded-full w-full mt-2">
-              <Link href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+              <Link href={appStoreUrl("menu")} target="_blank" rel="noopener noreferrer">
                 App Store
               </Link>
             </Button>
             <Button asChild className="rounded-full w-full">
-              <Link href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
+              <Link href={googlePlayUrl("menu")} target="_blank" rel="noopener noreferrer">
                 Google Play
               </Link>
             </Button>

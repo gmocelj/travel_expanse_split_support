@@ -9,8 +9,7 @@ import { DownloadCTA } from "@/components/landing/download-cta"
 import { Support } from "@/components/landing/support"
 import { Footer } from "@/components/landing/footer"
 import { getDictionary, homeUrl, localeInfo, type Locale } from "@/lib/i18n"
-
-const APP_STORE_ID = '6754640654'
+import { APP_STORE_ID } from "@/lib/store-links"
 
 async function fetchAppStoreRating(): Promise<{ ratingValue: string; ratingCount: string } | null> {
   try {

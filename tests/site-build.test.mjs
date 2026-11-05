@@ -5,7 +5,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { existsSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { localeInfo } from '../lib/i18n/config.ts'
 
 const SITE = 'https://trevvy.app'
@@ -141,6 +141,30 @@ test('join fallback still renders store buttons', () => {
   const src = readFileSync(path.join(outDir, '..', 'app', 'not-found.tsx'), 'utf8')
   assert.ok(src.includes('<StoreButtons'), 'JoinPage should use StoreButtons')
   const buttons = readFileSync(path.join(outDir, '..', 'components', 'store-buttons.tsx'), 'utf8')
-  assert.ok(buttons.includes('apps.apple.com/app/trevvy/id6754640654'))
-  assert.ok(buttons.includes('play.google.com/store/apps/details?id=com.gmocelj.travel_expanse_split'))
+  assert.ok(buttons.includes('appStoreUrl(placement)'))
+  assert.ok(buttons.includes('googlePlayUrl(placement)'))
+})
+
+test('store URLs are built only in lib/store-links.ts', () => {
+  const root = path.join(outDir, '..')
+  const walk = (dir) =>
+    readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
+      e.isDirectory() ? walk(path.join(dir, e.name)) : [path.join(dir, e.name)],
+    )
+  for (const file of [...walk(path.join(root, 'app')), ...walk(path.join(root, 'components'))]) {
+    if (!/\.(tsx?|mjs)$/.test(file)) continue
+    const src = readFileSync(file, 'utf8')
+    assert.ok(!/apps\.apple\.com|play\.google\.com/.test(src), `${file} hard-codes a store URL`)
+  }
+})
+
+test('landing page store buttons carry a Play referrer with the placement', () => {
+  const html = readPage('')
+  // 'menu' (mobile) is only rendered after opening the menu, so it is not in the static HTML.
+  for (const placement of ['header', 'hero', 'cta', 'footer']) {
+    const referrer = encodeURIComponent(
+      `utm_source=trevvy.app&utm_medium=website&utm_campaign=web-${placement}`,
+    )
+    assert.ok(html.includes(`referrer=${referrer}`), `missing referrer for ${placement}`)
+  }
 })
