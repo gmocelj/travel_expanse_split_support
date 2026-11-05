@@ -272,6 +272,7 @@ export const es: Dictionary = {
     contact: 'Contacto',
     legal: 'Legal',
     privacy: 'Política de privacidad',
+    terms: 'Términos de uso',
     deleteAccount: 'Eliminar cuenta',
     languages: 'Idiomas',
     rights: 'Todos los derechos reservados.',

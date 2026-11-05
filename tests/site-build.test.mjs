@@ -99,6 +99,23 @@ for (const [code, l] of Object.entries(LOCALES)) {
 test('legal pages stay English', () => {
   assert.match(readPage('privacy'), /<html lang="en"/)
   assert.match(readPage('delete-account'), /<html lang="en"/)
+  assert.match(readPage('terms'), /<html lang="en"/)
+})
+
+test('terms page exists with canonical URL and key clauses', () => {
+  const html = readPage('terms')
+  assert.ok(html.includes(`<link rel="canonical" href="${SITE}/terms/"`), 'terms canonical missing')
+  assert.match(html, /renews automatically/i)
+  assert.match(html, /Trip Pass/)
+  assert.match(html, /Licensed Application End User License Agreement/)
+  const xml = readFileSync(path.join(outDir, 'sitemap.xml'), 'utf8')
+  assert.ok(xml.includes(`<loc>${SITE}/terms/</loc>`), 'sitemap misses /terms/')
+})
+
+test('footer links to the terms page on every landing page', () => {
+  for (const l of Object.values(LOCALES)) {
+    assert.ok(readPage(l.dir).includes('href="/terms/"'), `footer terms link missing on /${l.dir}`)
+  }
 })
 
 test('sitemap lists every landing page with hreflang alternates', () => {

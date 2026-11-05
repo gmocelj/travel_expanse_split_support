@@ -272,6 +272,7 @@ export const ru: Dictionary = {
     contact: 'Связаться с нами',
     legal: 'Документы',
     privacy: 'Политика конфиденциальности',
+    terms: 'Условия использования',
     deleteAccount: 'Удаление аккаунта',
     languages: 'Языки',
     rights: 'Все права защищены.',

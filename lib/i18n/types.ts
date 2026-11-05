@@ -107,6 +107,7 @@ export type Dictionary = {
     contact: string
     legal: string
     privacy: string
+    terms: string
     deleteAccount: string
     languages: string
     rights: string

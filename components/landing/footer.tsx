@@ -80,6 +80,11 @@ export function Footer({ locale, t, nav }: { locale: Locale; t: Dictionary["foot
                   </Link>
                 </li>
                 <li>
+                  <Link href="/terms/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {t.terms}
+                  </Link>
+                </li>
+                <li>
                   <Link href="/delete-account/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {t.deleteAccount}
                   </Link>

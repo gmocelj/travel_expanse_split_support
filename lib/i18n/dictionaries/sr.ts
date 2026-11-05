@@ -278,6 +278,7 @@ export const sr: Dictionary = {
     contact: 'Kontakt',
     legal: 'Pravno',
     privacy: 'Politika privatnosti',
+    terms: 'Uslovi korišćenja',
     deleteAccount: 'Brisanje naloga',
     languages: 'Jezici',
     rights: 'Sva prava zadržana.',
