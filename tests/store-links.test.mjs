@@ -37,7 +37,13 @@ test('app store url has pt, ct and mt=8 when a token is set', () => {
 test('app store url has no query when the token is empty', () => {
   const expected = `https://apps.apple.com/app/trevvy/id${APP_STORE_ID}`
   assert.equal(appStoreUrlWith('', 'hero'), expected)
-  assert.equal(appStoreUrl('hero'), expected, 'shipped token must still be empty until step 12')
+})
+
+test('shipped app store url carries the Trevvy provider token and placement campaign', () => {
+  const url = new URL(appStoreUrl('footer'))
+  assert.equal(url.searchParams.get('pt'), '127792819')
+  assert.equal(url.searchParams.get('ct'), 'web-footer')
+  assert.equal(url.searchParams.get('mt'), '8')
 })
 
 test('play url referrer decodes to utm_source=trevvy.app, utm_medium=website, utm_campaign=web-hero', () => {

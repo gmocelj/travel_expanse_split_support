@@ -1,8 +1,8 @@
 export const APP_STORE_ID = '6754640654'
 export const PLAY_PACKAGE = 'com.gmocelj.travel_expanse_split'
 
-/** App Store Connect provider token (public). Empty means no pt/ct. The owner fills it in. */
-export const APPLE_PROVIDER_TOKEN = ''
+/** App Store Connect provider token (public, same for every campaign). Empty means no pt/ct. */
+export const APPLE_PROVIDER_TOKEN = '127792819'
 
 export const STORE_PLACEMENTS = [
   'header',
