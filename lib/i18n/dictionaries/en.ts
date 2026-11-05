@@ -29,7 +29,6 @@ export const en: Dictionary = {
     toggleMenu: 'Toggle menu',
   },
   hero: {
-    badge: 'Now available on App Store & Google Play',
     titleStart: 'Split travel expenses',
     titleHighlight: 'effortlessly',
     subtitle:

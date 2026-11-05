@@ -31,7 +31,6 @@ export const hr: Dictionary = {
     toggleMenu: 'Otvori izbornik',
   },
   hero: {
-    badge: 'Dostupno na App Storeu i Google Playu',
     titleStart: 'Podjela troškova putovanja',
     titleHighlight: 'bez računanja',
     subtitle:

@@ -30,7 +30,6 @@ export const ru: Dictionary = {
     toggleMenu: 'Открыть меню',
   },
   hero: {
-    badge: 'Уже в App Store и Google Play',
     titleStart: 'Делите расходы в поездке',
     titleHighlight: 'без лишних подсчётов',
     subtitle:

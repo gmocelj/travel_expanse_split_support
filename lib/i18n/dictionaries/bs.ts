@@ -31,7 +31,6 @@ export const bs: Dictionary = {
     toggleMenu: 'Otvori meni',
   },
   hero: {
-    badge: 'Dostupno na App Store i Google Play',
     titleStart: 'Podjela troškova putovanja',
     titleHighlight: 'bez računanja',
     subtitle:

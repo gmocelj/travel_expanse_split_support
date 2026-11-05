@@ -30,7 +30,6 @@ export const es: Dictionary = {
     toggleMenu: 'Abrir menú',
   },
   hero: {
-    badge: 'Ya disponible en App Store y Google Play',
     titleStart: 'Divide los gastos de viaje',
     titleHighlight: 'sin hacer cuentas',
     subtitle:

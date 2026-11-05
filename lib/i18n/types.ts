@@ -41,7 +41,6 @@ export type Dictionary = {
     toggleMenu: string
   }
   hero: {
-    badge: string
     titleStart: string
     titleHighlight: string
     subtitle: string
